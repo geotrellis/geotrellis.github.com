@@ -13,14 +13,14 @@
                       </ul>
                 </li>
 
-		 <li class="menu">
-                      <a href="#" class="menu">Demos</a>
-                      <ul class="menu-dropdown">
-                        <li><a href="{{ site.baseurl }}/demos">Demos Home</a></li>
-                        <li><a href="{{ site.baseurl }}/demos/weightedoverlay.html">Weighted Overlay</a></li>
-                        <li><a href="{{ site.baseurl }}/demos/kerneldensity.html">Kernel Density</a></li>
-                      </ul>
-                </li>
+		<!--  <li class="menu"> -->
+                <!--       <a href="#" class="menu">Demos</a> -->
+                <!--       <ul class="menu-dropdown"> -->
+                <!--         <li><a href="{{ site.baseurl }}/demos">Demos Home</a></li> -->
+                <!--         <li><a href="{{ site.baseurl }}/demos/weightedoverlay.html">Weighted Overlay</a></li> -->
+                <!--         <li><a href="{{ site.baseurl }}/demos/kerneldensity.html">Kernel Density</a></li> -->
+                <!--       </ul> -->
+                <!-- </li> -->
 
                 <li class="menu">
                       <a href="#" class="menu">Reference</a>

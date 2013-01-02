@@ -32,8 +32,8 @@
 	<h3><a href="{{ site.baseurl }}/tutorials">Tutorials</a></h3>
 	<p>Tutorials that will guide you through using GeoTrellis</p>
 
-	<h3><a href="{{ site.baseurl }}/demos">Demos</a></h3>
-	<p>See GeoTrellis in action!</p>
+	<!-- <h3><a href="{{ site.baseurl }}/demos">Demos</a></h3> -->
+	<!-- <p>See GeoTrellis in action!</p> -->
 
 	<h3><a href="{{ site.baseurl }}/operations">Operations</a></h3>
 	<p>A list of GeoTrellis operations, and how to use them.</p>
