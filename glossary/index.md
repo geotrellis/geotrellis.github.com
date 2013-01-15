@@ -103,7 +103,7 @@ The process whereby features are identified from images captured by satellite or
 A set of techniques for estimating missing values in a continuous surface based on a smaller number of known values.  
 
 
-* #### JTS (Java Topology Suite
+* #### JTS (Java Topology Suite)
 An open source Java library for manipulating [vector](#vector) geospatil data through a set of planar geometry functions.  The JTS library is a foundation library for many open source and commercial software pacs.  It is licensed under the LGPL (http://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License).  JTS has been ported to C++ as the GEOS library (http://trac.osgeo.org/geos/) and to .Net as the Net Topology Suite.  GeoTrellis uses JTS to provide some of its [vector](#vector) spatial operations.
 
 
