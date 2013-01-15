@@ -10,17 +10,18 @@ title: Glossary
 
 
 * #### Akka
+Akka is a framework developed using the Scala language to support development of concurrent, fault-tolerant and scalable applications.  Akka uses teh Actor Model of distributed processing.  In order to support fault tolerance, it adopts the "Let it crash" model in order to build applications that have greater self-healing characteristics.
 
 
 * #### ARG (Azavea Raster Grid)
-A [raster](#raster) file format developed to support distributed, high performance data processing in the GeoTrellis framework.
+A [raster](#Raster) file format developed to support distributed, high performance data processing in the GeoTrellis framework.
 
 
 * #### ASCII GRID
-A text-based file format for encoding RASTER data.  Originally developed by Esri, the file format is an open, non-proprietary format.
+A text-based file format for encoding [raster](#Raster) data.  Originally developed by Esri, the file format is an open, non-proprietary format.
 See also:
-* http://en.wikipedia.org/wiki/Esri_grid
-* http://docs.codehaus.org/display/GEOTOOLS/ArcInfo+ASCII+Grid+format#ASCIIGrid
+   - http://en.wikipedia.org/wiki/Esri_grid
+   - http://docs.codehaus.org/display/GEOTOOLS/ArcInfo+ASCII+Grid+format#ASCIIGrid
 
 
 * #### Aspect
@@ -39,12 +40,9 @@ The smallest square in a grid.  A cell is the fundamental unit of a [raster](#Ra
 The linear size in map units of the smallest area (the [cell](#Cell) or [pixel](#Pixel)) in a [raster](#Raster) data set.  For example, most land cover data derived from the Landsat satellite is usually published with a 30 meter cell size.
 
 
-* #### Cellular Automata
-
-
 * #### Convolution
 A type of [Focal](#Focal_Operations) operation in which a numerical weight is applied to each cell in the neighborhood (or "kernel").  [Kernel Density](#kernel_density_estimation) (KDE) is an example of a convolution, but they can be used for many purposes.  In Map Algebra terms, a convolution is a FocalDistribution operation.
-* [GeoTrellis Docs - Convolve Operation](http://azavea.github.com/geotrellis/latest/api/#geotrellis.raster.op.focal.Convolve)
+   - [GeoTrellis Docs - Convolve Operation](http://azavea.github.com/geotrellis/latest/api/#geotrellis.raster.op.focal.Convolve)
 
 
 * #### Coordinate System
@@ -52,11 +50,11 @@ A fixed reference frame superimposed on the surface of the earth (or other plane
 
 
 * #### Cost Distance
-A class of [Focal operations](#focal_operations) in which distance from each cell to the nearest "source" or "target" is computed.  Rather than the linear or "Euclidean" distance, the distance is computed by accumulating a "cost" (sometimes referred to as "friction") to travel from one cell to another.  The cost is usually represented by a second [raster](#raster) data set in which the cost is a numerical value associated with each cell.  In addition to a cost factor, some GIS systems support the addition of vertical and horizontal restrictions on movement in order to better model dispersion and flow in certain kinds of systems.  For example, more gas is required to drive a car uphill than downhill or to drive against he wind, so there is not only a friction component but the direction of travel affects the cost.
+A class of [Focal operations](#Focal_Operations) in which distance from each cell to the nearest "source" or "target" is computed.  Rather than the linear or "Euclidean" distance, the distance is computed by accumulating a "cost" (sometimes referred to as "friction") to travel from one cell to another.  The cost is usually represented by a second [raster](#raster) data set in which the cost is a numerical value associated with each cell.  In addition to a cost factor, some GIS systems support the addition of vertical and horizontal restrictions on movement in order to better model dispersion and flow in certain kinds of systems.  For example, more gas is required to drive a car uphill than downhill or to drive against he wind, so there is not only a friction component but the direction of travel affects the cost.
 See also: 
-* [Euclidean Distance](#Euclidean_Distance)
-* [ArcGIS Resource Center - Understanding Cost Distance Analysis](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#//009z000000z5000000.htm)
-* [ArcGIS Resource Center - Understanding Path Distance Analysis](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/Understanding_path_distance_analysis/009z00000022000000/)
+   - [Euclidean Distance](#Euclidean_Distance)
+   - [ArcGIS Resource Center - Understanding Cost Distance Analysis](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#//009z000000z5000000.htm)
+   - [ArcGIS Resource Center - Understanding Path Distance Analysis](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/Understanding_path_distance_analysis/009z00000022000000/)
 
 
 * #### DEM (Digital Elevation Model)
@@ -64,18 +62,18 @@ A digital representation of elevation on a land surface.  A DEM is mostly common
 
 
 * #### Euclidean Distance
-A class of [Focal operations](#focal_operations) in which linear (straight-line or "Euclidean") distance from each cell to the nearest "source" or "target" is computed.  Usually, this is done from cell center to cell center.  In addition to distance, separate operations are usually provided for determining Direction to the source and allocating a unique identifier for the nearest source.
+A class of [Focal operations](#Focal_Operations) in which linear (straight-line or "Euclidean") distance from each cell to the nearest "source" or "target" is computed.  Usually, this is done from cell center to cell center.  In addition to distance, separate operations are usually provided for determining Direction to the source and allocating a unique identifier for the nearest source.
 See also: 
-* [Cost Distance](#Cost_Distance)
-* [ArcGIS Resource Center - Understanding Euclidean Distance Analysis](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/Understanding_Euclidean_distance_analysis/009z0000001t000000/)
+   - [Cost Distance](#Cost_Distance)
+   - [ArcGIS Resource Center - Understanding Euclidean Distance Analysis](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/Understanding_Euclidean_distance_analysis/009z0000001t000000/)
 
 
 * #### Focal Operations
-A class of [Map Alebra](#map_algebra) operations in which a data set is transformed based on the cells around each cell.  The cells that define "neighborhood" can take many forms, including rectangular, circular, donuts or wedges and more complex operations can be defined by using neighborhoods in which cell has an additional weight defined.   Focal operations are sometimes organized into those in which only the immediate neighborhood is considered and those that include an extended neighborhood.  [Cost Distance](#cost_distance) and [Euclidean Distance](#euclidean_distance) operations are usually considered part of the exended neighborhood group.
+A class of [Map Alebra](#Map_Algebra) operations in which a data set is transformed based on the cells around each cell.  The cells that define "neighborhood" can take many forms, including rectangular, circular, donuts or wedges and more complex operations can be defined by using neighborhoods in which cell has an additional weight defined.   Focal operations are sometimes organized into those in which only the immediate neighborhood is considered and those that include an extended neighborhood.  [Cost Distance](#cost_distance) and [Euclidean Distance](#euclidean_distance) operations are usually considered part of the exended neighborhood group.
 
 
 * #### GeoTIFF
-An extension of the Tag Image File Format (TIFF) [raster](#raster) file format developed to include additional metadata required for storing geospatial data.  The TIFF file was original developed by Aldus Corporation.
+An extension of the Tag Image File Format (TIFF) [raster](#Raster) file format developed to include additional metadata required for storing geospatial data.  The TIFF file was original developed by Aldus Corporation.
 
 
 * #### Geoprocessing
@@ -89,8 +87,8 @@ Geospatial Data Abstraction Library - http://www.gdal.org/ - An open source soft
 * #### GRID (Esri GRID)
 A proprietary raster data storge format developed by Esri. Like most raster data storage formats, GRIDs represent continuous, field-based attributes (such as elevation, temperature or land cover) by organizing geographic space into an array of square cells. A GRID is stored in a separate directory with associated tables and files containing information about that GRID's geography, attributes and processing history.  The Esri GRID data structure is very common, but GeoTrellis cannot use it directly and we recommend using GDAL, ArcGIS or other software to convert to GeoTIFF.  You can also use a recent build of GDAL to convert directly to the ARG file format used internally by GeoTrellis
 See also 
-* http://en.wikipedia.org/wiki/Esri_grid
-* http://support.esri.com/en/knowledgebase/techarticles/detail/30616
+   - [Wikipedia: Esri GRID](http://en.wikipedia.org/wiki/Esri_grid)
+   - [Esri Knowledge Base - What is the file structure of an Esri GRID?](http://support.esri.com/en/knowledgebase/techarticles/detail/30616)
 
 
 * #### Hillshade
@@ -110,15 +108,16 @@ An open source Java library for manipulating [vector](#vector) geospatil data th
 
 
 * #### Kernel
-
+Another name for a neighborhood used in a [Focal operation](#Focal_Operations).
 
 * #### Kernel Density Estimation
+A measurement of density per unit area from one or more point or polyline features using a kernel function to fit a smoothly tapered surface to each point or polyline.  The result is sometimes known as a "heat map" that shows concentrations of the features.
 See also:
-* [Wikipedia: Kernel Density Estimation](http://en.wikipedia.org/wiki/Kernel_density_estimation)
-* [ArcGIS Resource Center - Understanding Density Analysis](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/Understanding_density_analysis/009z0000000w000000/)
-* [ArcGIS Resource Center - How Kernel Density Works](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html# Analysis/How_Kernel_Density_works/009z00000011000000/)
-* GeoTrellis Docs - KernelDensity operation - http://azavea.github.com/geotrellis/latest/api/#geotrellis.raster.op.focal.KernelDensity)
-* [Applying Map Algebra – Part 1](http://www.azavea.com/blogs/atlas/2013/01/applying-map-algebra-part-1/)
+   - [Wikipedia: Kernel Density Estimation](http://en.wikipedia.org/wiki/Kernel_density_estimation)
+   - [ArcGIS Resource Center - Understanding Density Analysis](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/Understanding_density_analysis/009z0000000w000000/)
+   - [ArcGIS Resource Center - How Kernel Density Works](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/How_Kernel_Density_works/009z00000011000000/)
+   - [GeoTrellis Docs - KernelDensity operation](http://azavea.github.com/geotrellis/latest/api/#geotrellis.raster.op.focal.KernelDensity)
+   - [Applying Map Algebra – Part 1](http://www.azavea.com/blogs/atlas/2013/01/applying-map-algebra-part-1/)
 
 
 * #### Kriging
@@ -145,7 +144,7 @@ Satellite or aerial photography collected in two or more wavebands.
 
 
 * #### Neighborhood Operations
-See [Focal Operations](#focal_operations)
+See [Focal Operations](#Focal_Operations)
 
 
 * #### Operations
@@ -164,6 +163,7 @@ A geospatial data structure that organizes numeric values into a rectangular arr
 
 
 * #### Scala
+Scala is a general purpose programming language designed to express common programming patterns in a concise, elegant, and type-safe way. Scala integrates features of object-oriented and functional languages.  Scala compiles to byte code that execute using the Java Runtime Environment.
 
 
 * #### Supervised Classification
