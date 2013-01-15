@@ -8,6 +8,9 @@ title: Glossary
   <span id="filter-count"></span>
 </div>
 
+* #### a test
+This is a test of editing the glossary (by rob).
+
 * #### algebraic data type
 A type defined by providing several alternatives, each of which comes with its own constructor. It usually comes with a way to decompose the type through pattern matching. The concept is found in specification languages and functional programming languages. Algebraic data types can be emulated in Scala with case classes.
 
