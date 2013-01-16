@@ -80,7 +80,7 @@ An extension of the Tag Image File Format (TIFF) [raster](#Raster) file format d
 The process of transforming one or more geospatial data structures into others.  Often, this involves the application of one or more processing directives (operations) performed on data using GIS software.  A geoprocessing operation typically (1) ingests a spatial data set, (2) transforms the data or uses the data to compute a new value, and (3) outputs a new spatial dataset. Geoprocessing operations can be automated and shared through the creation of tools in scripting languages, and can be combined and sequenced to create geoprocessing models.
 
 
-* #### GDAL (Geospatial Data Abstraction Library
+* #### GDAL (Geospatial Data Abstraction Library)
 [GDAL](http://www.gdal.org/) is an open source software project that provides raster data format translation capabilities.  The GDAL project has both command line utilities and services as a key raster I/O library for many commercial and open source projects.
 
 
@@ -104,7 +104,7 @@ A set of techniques for estimating missing values in a continuous surface based 
 
 
 * #### JTS (Java Topology Suite)
-An open source Java library for manipulating [vector](#Vector) geospatil data through a set of planar geometry functions.  The JTS library is a foundation library for many open source and commercial software pacs.  It is licensed under the [LGPL](http://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License) license.  JTS has been ported to C++ as the [GEOS library](http://trac.osgeo.org/geos/) and to .Net as the [Net Topology Suite](http://code.google.com/p/nettopologysuite/).  GeoTrellis uses JTS to provide some of its [vector](#vector) spatial operations.
+An open source Java library for manipulating [vector](#Vector) geospatial data through a set of planar geometry functions.  The JTS library is a foundation library for many open source and commercial software pacs.  It is licensed under the [LGPL](http://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License) license.  JTS has been ported to C++ as the [GEOS library](http://trac.osgeo.org/geos/) and to .Net as the [Net Topology Suite](http://code.google.com/p/nettopologysuite/).  GeoTrellis uses JTS to provide some of its [vector](#vector) spatial operations.
 
 
 * #### Kernel
@@ -128,7 +128,6 @@ An [interpolation](#Interpolation) technique in which measurement of spatial var
 A class of [Map Alebra](#Map_Algebra) operations in which two or more data sets are combined on a cell-by-cell basis, applying a mathematical function to generate a new map layer.
 
 
-
 * #### Map Algebra
 A formal system describing various functions and processes that can be used to manipulate geospatial data.  Originally developed by C. Dana Tomlin, Map Algebra is both a computation language and a general system for combining and transforming geospatial data by decomposing data and data processing into basic building blocks that can be recomposed with great flexibility.  Map Algebra operations are usually organized into [Local](#local_operations), [Focal](#focal_operations) and [Zonal](#zonal_operations) operations.  While not explicitly limited to [raster](#raster) data, it is most commonly associated with manipulation of [raster](#raster) data sets.  Map Algebra was first published as Tomlin's PhD thesis and then as [Geographic Information Systems and Cartographic Modeling](http://www.amazon.com/Geographic-Information-Systems-Cartographic-Modeling/dp/0133509273), a Prentice-Hall book published in 1990.  A revised version of the book, [GIS and Cartographic Modeling](http://www.amazon.com/GIS-Cartographic-Modeling-Dana-Tomlin/dp/158948309X/) was released by Esri Press in 2012.  
 
@@ -150,6 +149,7 @@ See [Focal Operations](#Focal_Operations)
 
 
 * #### Operations
+Operations are transformations of data that result in new data.
 
 
 * #### Pixel
@@ -166,12 +166,6 @@ A geospatial data structure that organizes numeric values into a rectangular arr
 
 * #### Scala
 Scala is a general purpose programming language designed to express common programming patterns in a concise, elegant, and type-safe way. Scala integrates features of object-oriented and functional languages.  Scala compiles to byte code that execute using the Java Runtime Environment.
-
-
-* #### Supervised Classification
-
-
-* #### Unsupervised Classification
 
 
 * #### Vector Data
