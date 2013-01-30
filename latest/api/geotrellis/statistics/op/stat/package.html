@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>geotrellis.statistics.op.stat</title>
+          <title>stat - geotrellis.statistics.op.stat</title>
+          <meta name="description" content="stat - geotrellis.statistics.op.stat" />
+          <meta name="keywords" content="stat geotrellis.statistics.op.stat" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../../lib/template.css" />
-      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../../lib/diagrams.js" id="diagrams-js"></script>
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'geotrellis.statistics.op.stat.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../../lib/package_big.png" />
-        <p id="owner"><a name="geotrellis" class="extype" href="../../../package.html">geotrellis</a>.<a name="geotrellis.statistics" class="extype" href="../../package.html">statistics</a>.<a name="geotrellis.statistics.op" class="extype" href="../package.html">op</a></p>
+        <p id="owner"><a href="../../../package.html" class="extype" name="geotrellis">geotrellis</a>.<a href="../../package.html" class="extype" name="geotrellis.statistics">statistics</a>.<a href="../package.html" class="extype" name="geotrellis.statistics.op">op</a></p>
         <h1>stat</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,9 +61,10 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="geotrellis.statistics.op.stat.BuildColorBreaks" data-isabs="false">
+              <ol><li name="geotrellis.statistics.op.stat.BuildColorBreaks" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BuildColorBreaksextendsOp2[Array[Int],Array[Int],geotrellis.data.ColorBreaks]withProductwithSerializable"></a>
       <a id="BuildColorBreaks:BuildColorBreaks"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -56,11 +72,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="BuildColorBreaks.html"><span class="name">BuildColorBreaks</span></a><span class="params">(<span name="breaks">breaks: Op[Array[Int]]</span>, <span name="colors">colors: Op[Array[Int]]</span>)</span><span class="result"> extends Op2[Array[Int], Array[Int], ColorBreaks] with Product with Serializable</span>
+        <a href="BuildColorBreaks.html"><span class="name">BuildColorBreaks</span></a><span class="params">(<span name="breaks">breaks: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]]</span>, <span name="colors">colors: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]]</span>)</span><span class="result"> extends <a href="../../../Op2.html" class="extype" name="geotrellis.Op2">Op2</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>], <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>], <a href="../../../data/ColorBreaks.html" class="extype" name="geotrellis.data.ColorBreaks">ColorBreaks</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="geotrellis.statistics.op.stat.BuildColorMapper" data-isabs="false">
+    </li><li name="geotrellis.statistics.op.stat.BuildColorMapper" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BuildColorMapperextendsOp2[geotrellis.data.ColorBreaks,Int,geotrellis.data.ColorMapper]withProductwithSerializable"></a>
       <a id="BuildColorMapper:BuildColorMapper"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -68,11 +85,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="BuildColorMapper.html"><span class="name">BuildColorMapper</span></a><span class="params">(<span name="colorBreaks">colorBreaks: Op[ColorBreaks]</span>, <span name="noDataColor">noDataColor: Op[Int]</span>)</span><span class="result"> extends Op2[ColorBreaks, Int, ColorMapper] with Product with Serializable</span>
+        <a href="BuildColorMapper.html"><span class="name">BuildColorMapper</span></a><span class="params">(<span name="colorBreaks">colorBreaks: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../../data/ColorBreaks.html" class="extype" name="geotrellis.data.ColorBreaks">ColorBreaks</a>]</span>, <span name="noDataColor">noDataColor: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result"> extends <a href="../../../Op2.html" class="extype" name="geotrellis.Op2">Op2</a>[<a href="../../../data/ColorBreaks.html" class="extype" name="geotrellis.data.ColorBreaks">ColorBreaks</a>, <span class="extype" name="scala.Int">Int</span>, <a href="../../../data/ColorMapper.html" class="extype" name="geotrellis.data.ColorMapper">ColorMapper</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="geotrellis.statistics.op.stat.GetClassBreaks" data-isabs="false">
+    </li><li name="geotrellis.statistics.op.stat.GetClassBreaks" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GetClassBreaksextendsOp[Array[Int]]withProductwithSerializable"></a>
       <a id="GetClassBreaks:GetClassBreaks"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -80,11 +98,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="GetClassBreaks.html"><span class="name">GetClassBreaks</span></a><span class="params">(<span name="h">h: Op[Histogram]</span>, <span name="n">n: Op[Int]</span>)</span><span class="result"> extends Op[Array[Int]] with Product with Serializable</span>
+        <a href="GetClassBreaks.html"><span class="name">GetClassBreaks</span></a><span class="params">(<span name="h">h: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../Histogram.html" class="extype" name="geotrellis.statistics.Histogram">Histogram</a>]</span>, <span name="n">n: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result"> extends <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Generate quantile class breaks for a given raster.</p>
-    </li><li visbl="pub" name="geotrellis.statistics.op.stat.GetColorBreaks" data-isabs="false">
+    </li><li name="geotrellis.statistics.op.stat.GetColorBreaks" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GetColorBreaksextendsOp[geotrellis.data.ColorBreaks]withProductwithSerializable"></a>
       <a id="GetColorBreaks:GetColorBreaks"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -92,11 +111,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="GetColorBreaks.html"><span class="name">GetColorBreaks</span></a><span class="params">(<span name="h">h: Op[Histogram]</span>, <span name="cs">cs: Op[Array[Int]]</span>)</span><span class="result"> extends Op[ColorBreaks] with Product with Serializable</span>
+        <a href="GetColorBreaks.html"><span class="name">GetColorBreaks</span></a><span class="params">(<span name="h">h: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../Histogram.html" class="extype" name="geotrellis.statistics.Histogram">Histogram</a>]</span>, <span name="cs">cs: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]]</span>)</span><span class="result"> extends <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../../data/ColorBreaks.html" class="extype" name="geotrellis.data.ColorBreaks">ColorBreaks</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Generate quantile class breaks with assigned colors.</p>
-    </li><li visbl="pub" name="geotrellis.statistics.op.stat.GetColorsFromPalette" data-isabs="false">
+    </li><li name="geotrellis.statistics.op.stat.GetColorsFromPalette" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GetColorsFromPaletteextendsOp2[Array[Int],Int,Array[Int]]withProductwithSerializable"></a>
       <a id="GetColorsFromPalette:GetColorsFromPalette"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -104,11 +124,25 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="GetColorsFromPalette.html"><span class="name">GetColorsFromPalette</span></a><span class="params">(<span name="palette">palette: Op[Array[Int]]</span>, <span name="num">num: Op[Int]</span>)</span><span class="result"> extends Op2[Array[Int], Int, Array[Int]] with Product with Serializable</span>
+        <a href="GetColorsFromPalette.html"><span class="name">GetColorsFromPalette</span></a><span class="params">(<span name="palette">palette: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]]</span>, <span name="num">num: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result"> extends <a href="../../../Op2.html" class="extype" name="geotrellis.Op2">Op2</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>], <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="geotrellis.statistics.op.stat.GetHistogramArray" data-isabs="false">
+    </li><li name="geotrellis.statistics.op.stat.GetDoubleHistogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GetDoubleHistogramextendsReducer1[geotrellis.statistics.FastMapHistogram,geotrellis.statistics.Histogram]withProductwithSerializable"></a>
+      <a id="GetDoubleHistogram:GetDoubleHistogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GetDoubleHistogram.html"><span class="name">GetDoubleHistogram</span></a><span class="params">(<span name="r">r: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>]</span>, <span name="significantDigits">significantDigits: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="../../../logic/Reducer1.html" class="extype" name="geotrellis.logic.Reducer1">Reducer1</a>[<a href="../../FastMapHistogram.html" class="extype" name="geotrellis.statistics.FastMapHistogram">FastMapHistogram</a>, <a href="../../Histogram.html" class="extype" name="geotrellis.statistics.Histogram">Histogram</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Create a histogram from double values in a raster.</p>
+    </li><li name="geotrellis.statistics.op.stat.GetHistogramArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GetHistogramArrayextendsReducer2[Int,geotrellis.statistics.ArrayHistogram,geotrellis.statistics.Histogram]withProductwithSerializable"></a>
       <a id="GetHistogramArray:GetHistogramArray"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -116,11 +150,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="GetHistogramArray.html"><span class="name">GetHistogramArray</span></a><span class="params">(<span name="r">r: Op[Raster]</span>, <span name="n">n: Op[Int]</span>)</span><span class="result"> extends Reducer2[Int, ArrayHistogram, Histogram] with Product with Serializable</span>
+        <a href="GetHistogramArray.html"><span class="name">GetHistogramArray</span></a><span class="params">(<span name="r">r: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>]</span>, <span name="n">n: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result"> extends <a href="../../../logic/Reducer2.html" class="extype" name="geotrellis.logic.Reducer2">Reducer2</a>[<span class="extype" name="scala.Int">Int</span>, <a href="../../ArrayHistogram.html" class="extype" name="geotrellis.statistics.ArrayHistogram">ArrayHistogram</a>, <a href="../../Histogram.html" class="extype" name="geotrellis.statistics.Histogram">Histogram</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Implements a histogram in terms of an array of the given size.</p>
-    </li><li visbl="pub" name="geotrellis.statistics.op.stat.GetHistogramMap" data-isabs="false">
+    </li><li name="geotrellis.statistics.op.stat.GetHistogramMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GetHistogramMapextendsReducer1[geotrellis.statistics.FastMapHistogram,geotrellis.statistics.Histogram]withProductwithSerializable"></a>
       <a id="GetHistogramMap:GetHistogramMap"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -128,11 +163,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="GetHistogramMap.html"><span class="name">GetHistogramMap</span></a><span class="params">(<span name="r">r: Op[Raster]</span>)</span><span class="result"> extends Reducer1[FastMapHistogram, Histogram] with Product with Serializable</span>
+        <a href="GetHistogramMap.html"><span class="name">GetHistogramMap</span></a><span class="params">(<span name="r">r: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>]</span>)</span><span class="result"> extends <a href="../../../logic/Reducer1.html" class="extype" name="geotrellis.logic.Reducer1">Reducer1</a>[<a href="../../FastMapHistogram.html" class="extype" name="geotrellis.statistics.FastMapHistogram">FastMapHistogram</a>, <a href="../../Histogram.html" class="extype" name="geotrellis.statistics.Histogram">Histogram</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Implements a histogram in terms of a map.</p>
-    </li><li visbl="pub" name="geotrellis.statistics.op.stat.GetMinMax" data-isabs="false">
+    </li><li name="geotrellis.statistics.op.stat.GetMinMax" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GetMinMaxextendsOp1[geotrellis.Raster,(Int,Int)]withProductwithSerializable"></a>
       <a id="GetMinMax:GetMinMax"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -140,24 +176,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="GetMinMax.html"><span class="name">GetMinMax</span></a><span class="params">(<span name="r">r: Op[Raster]</span>)</span><span class="result"> extends Op1[Raster, (Int, Int)] with Product with Serializable</span>
+        <a href="GetMinMax.html"><span class="name">GetMinMax</span></a><span class="params">(<span name="r">r: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>]</span>)</span><span class="result"> extends <a href="../../../Op1.html" class="extype" name="geotrellis.Op1">Op1</a>[<a href="../../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>, (<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>)] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Find the minimum and maximum value of a raster.</p>
-    </li><li visbl="pub" name="geotrellis.statistics.op.stat.GetPolygonalZonalHistograms" data-isabs="false">
-      <a id="GetPolygonalZonalHistograms:GetPolygonalZonalHistograms"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">case class</span>
-      </span>
-      <span class="symbol">
-        <a href="GetPolygonalZonalHistograms.html"><span class="name">GetPolygonalZonalHistograms</span></a><span class="params">(<span name="ps">ps: Array[Op[Polygon]]</span>, <span name="r">r: Op[Raster]</span>, <span name="size">size: Int</span>)</span><span class="result"> extends Op[Array[Histogram]] with Product with Serializable</span>
-      </span>
-      </h4>
-      <p class="comment cmt">Given a raster and an array of polygons, return a histogram summary of the cells
-within each polygon.</p>
-    </li><li visbl="pub" name="geotrellis.statistics.op.stat.GetStandardDeviation" data-isabs="false">
+    </li><li name="geotrellis.statistics.op.stat.GetStandardDeviation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GetStandardDeviationextendsOp[geotrellis.Raster]withProductwithSerializable"></a>
       <a id="GetStandardDeviation:GetStandardDeviation"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -165,11 +189,12 @@ within each polygon.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="GetStandardDeviation.html"><span class="name">GetStandardDeviation</span></a><span class="params">(<span name="r">r: Op[Raster]</span>, <span name="h">h: Op[Histogram]</span>, <span name="factor">factor: Int</span>)</span><span class="result"> extends Op[Raster] with Product with Serializable</span>
+        <a href="GetStandardDeviation.html"><span class="name">GetStandardDeviation</span></a><span class="params">(<span name="r">r: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>]</span>, <span name="h">h: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../Histogram.html" class="extype" name="geotrellis.statistics.Histogram">Histogram</a>]</span>, <span name="factor">factor: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="geotrellis.statistics.op.stat.GetStatistics" data-isabs="false">
+    </li><li name="geotrellis.statistics.op.stat.GetStatistics" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GetStatisticsextendsOp1[geotrellis.statistics.Histogram,geotrellis.statistics.Statistics]withProductwithSerializable"></a>
       <a id="GetStatistics:GetStatistics"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -177,11 +202,12 @@ within each polygon.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="GetStatistics.html"><span class="name">GetStatistics</span></a><span class="params">(<span name="h">h: Op[Histogram]</span>)</span><span class="result"> extends Op1[Histogram, Statistics] with Product with Serializable</span>
+        <a href="GetStatistics.html"><span class="name">GetStatistics</span></a><span class="params">(<span name="h">h: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../Histogram.html" class="extype" name="geotrellis.statistics.Histogram">Histogram</a>]</span>)</span><span class="result"> extends <a href="../../../Op1.html" class="extype" name="geotrellis.Op1">Op1</a>[<a href="../../Histogram.html" class="extype" name="geotrellis.statistics.Histogram">Histogram</a>, <a href="../../Statistics.html" class="extype" name="geotrellis.statistics.Statistics">Statistics</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Determine statistical data for the given histogram.</p>
-    </li><li visbl="pub" name="geotrellis.statistics.op.stat.Max" data-isabs="false">
+    </li><li name="geotrellis.statistics.op.stat.Max" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MaxextendsReducer1[Int,Int]withProductwithSerializable"></a>
       <a id="Max:Max"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -189,11 +215,12 @@ within each polygon.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Max.html"><span class="name">Max</span></a><span class="params">(<span name="r">r: Op[Raster]</span>)</span><span class="result"> extends Reducer1[Int, Int] with Product with Serializable</span>
+        <a href="Max.html"><span class="name">Max</span></a><span class="params">(<span name="r">r: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>]</span>)</span><span class="result"> extends <a href="../../../logic/Reducer1.html" class="extype" name="geotrellis.logic.Reducer1">Reducer1</a>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="geotrellis.statistics.op.stat.Min" data-isabs="false">
+    </li><li name="geotrellis.statistics.op.stat.Min" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MinextendsReducer1[Int,Int]withProductwithSerializable"></a>
       <a id="Min:Min"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -201,11 +228,12 @@ within each polygon.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Min.html"><span class="name">Min</span></a><span class="params">(<span name="r">r: Op[Raster]</span>)</span><span class="result"> extends Reducer1[Int, Int] with Product with Serializable</span>
+        <a href="Min.html"><span class="name">Min</span></a><span class="params">(<span name="r">r: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>]</span>)</span><span class="result"> extends <a href="../../../logic/Reducer1.html" class="extype" name="geotrellis.logic.Reducer1">Reducer1</a>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="geotrellis.statistics.op.stat.MinMax" data-isabs="false">
+    </li><li name="geotrellis.statistics.op.stat.MinMax" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MinMaxextendsReducer1[(Int,Int),(Int,Int)]withProductwithSerializable"></a>
       <a id="MinMax:MinMax"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -213,7 +241,7 @@ within each polygon.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="MinMax.html"><span class="name">MinMax</span></a><span class="params">(<span name="r">r: Op[Raster]</span>)</span><span class="result"> extends Reducer1[(Int, Int), (Int, Int)] with Product with Serializable</span>
+        <a href="MinMax.html"><span class="name">MinMax</span></a><span class="params">(<span name="r">r: <a href="../../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>]</span>)</span><span class="result"> extends <a href="../../../logic/Reducer1.html" class="extype" name="geotrellis.logic.Reducer1">Reducer1</a>[(<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>), (<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>)] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Find the minimum and maximum values of a raster.</p>
@@ -222,9 +250,10 @@ within each polygon.</p>
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="geotrellis.statistics.op.stat.GetHistogram" data-isabs="false">
+              <ol><li name="geotrellis.statistics.op.stat.GetHistogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GetHistogram"></a>
       <a id="GetHistogram:GetHistogram"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -232,7 +261,7 @@ within each polygon.</p>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="GetHistogram$.html"><span class="name">GetHistogram</span></a><span class="result"> extends AnyRef</span>
+        <a href="GetHistogram$.html"><span class="name">GetHistogram</span></a>
       </span>
       </h4>
       <p class="comment cmt">Contains several different operations for building a histograms of a raster.</p>
@@ -240,10 +269,20 @@ within each polygon.</p>
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

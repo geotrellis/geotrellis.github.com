@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>geotrellis.raster.op</title>
+          <title>op - geotrellis.raster.op</title>
+          <meta name="description" content="op - geotrellis.raster.op" />
+          <meta name="keywords" content="op geotrellis.raster.op" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'geotrellis.raster.op.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../lib/package_big.png" />
-        <p id="owner"><a name="geotrellis" class="extype" href="../../package.html">geotrellis</a>.<a name="geotrellis.raster" class="extype" href="../package.html">raster</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="geotrellis">geotrellis</a>.<a href="../package.html" class="extype" name="geotrellis.raster">raster</a></p>
         <h1>op</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,9 +61,10 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="geotrellis.raster.op.CreateRaster" data-isabs="false">
+              <ol><li name="geotrellis.raster.op.CreateRaster" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CreateRasterextendsOp1[geotrellis.RasterExtent,geotrellis.Raster]withProductwithSerializable"></a>
       <a id="CreateRaster:CreateRaster"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -56,11 +72,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="CreateRaster.html"><span class="name">CreateRaster</span></a><span class="params">(<span name="re">re: Op[RasterExtent]</span>)</span><span class="result"> extends Op1[RasterExtent, Raster] with Product with Serializable</span>
+        <a href="CreateRaster.html"><span class="name">CreateRaster</span></a><span class="params">(<span name="re">re: <a href="../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../RasterExtent.html" class="extype" name="geotrellis.RasterExtent">RasterExtent</a>]</span>)</span><span class="result"> extends <a href="../../Op1.html" class="extype" name="geotrellis.Op1">Op1</a>[<a href="../../RasterExtent.html" class="extype" name="geotrellis.RasterExtent">RasterExtent</a>, <a href="../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Creates an empty raster object based on the given raster properties.</p>
-    </li><li visbl="pub" name="geotrellis.raster.op.Force" data-isabs="false">
+    </li><li name="geotrellis.raster.op.Force" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ForceextendsOp1[geotrellis.Raster,geotrellis.Raster]withProductwithSerializable"></a>
       <a id="Force:Force"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -68,11 +85,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Force.html"><span class="name">Force</span></a><span class="params">(<span name="r">r: Op[Raster]</span>)</span><span class="result"> extends Op1[Raster, Raster] with Product with Serializable</span>
+        <a href="Force.html"><span class="name">Force</span></a><span class="params">(<span name="r">r: <a href="../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>]</span>)</span><span class="result"> extends <a href="../../Op1.html" class="extype" name="geotrellis.Op1">Op1</a>[<a href="../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>, <a href="../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="geotrellis.raster.op.VerticalFlip" data-isabs="false">
+    </li><li name="geotrellis.raster.op.VerticalFlip" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VerticalFlipextendsOp1[geotrellis.Raster,geotrellis.Raster]withProductwithSerializable"></a>
       <a id="VerticalFlip:VerticalFlip"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -80,11 +98,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="VerticalFlip.html"><span class="name">VerticalFlip</span></a><span class="params">(<span name="r">r: Op[Raster]</span>)</span><span class="result"> extends Op1[Raster, Raster] with Product with Serializable</span>
+        <a href="VerticalFlip.html"><span class="name">VerticalFlip</span></a><span class="params">(<span name="r">r: <a href="../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>]</span>)</span><span class="result"> extends <a href="../../Op1.html" class="extype" name="geotrellis.Op1">Op1</a>[<a href="../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>, <a href="../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Flip the data for a raster along the X-axis.</p>
-    </li><li visbl="pub" name="geotrellis.raster.op.ZonalHistogram" data-isabs="false">
+    </li><li name="geotrellis.raster.op.ZonalHistogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ZonalHistogramextendsOp4[geotrellis.Raster,geotrellis.Raster,Int,Int,Array[geotrellis.statistics.Histogram]]withProductwithSerializable"></a>
       <a id="ZonalHistogram:ZonalHistogram"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -92,7 +111,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="ZonalHistogram.html"><span class="name">ZonalHistogram</span></a><span class="params">(<span name="data">data: Op[Raster]</span>, <span name="zones">zones: Op[Raster]</span>, <span name="zonesArraySize">zonesArraySize: Op[Int]</span>, <span name="histArraySize">histArraySize: Op[Int]</span>)</span><span class="result"> extends Op4[Raster, Raster, Int, Int, Array[Histogram]] with Product with Serializable</span>
+        <a href="ZonalHistogram.html"><span class="name">ZonalHistogram</span></a><span class="params">(<span name="data">data: <a href="../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>]</span>, <span name="zones">zones: <a href="../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<a href="../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>]</span>, <span name="zonesArraySize">zonesArraySize: <a href="../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="histArraySize">histArraySize: <a href="../../package.html#Op[+A]=geotrellis.Operation[A]" class="extmbr" name="geotrellis.Op">Op</a>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result"> extends <a href="../../Op4.html" class="extype" name="geotrellis.Op4">Op4</a>[<a href="../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>, <a href="../../Raster.html" class="extype" name="geotrellis.Raster">Raster</a>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Array">Array</span>[<a href="../../statistics/Histogram.html" class="extype" name="geotrellis.statistics.Histogram">Histogram</a>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Given a raster, return a histogram summary of the cells within each zone.</p>
@@ -101,9 +120,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="geotrellis.raster.op.data" data-isabs="false">
+              <ol><li name="geotrellis.raster.op.data" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="data"></a>
       <a id="data:data"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -115,7 +135,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="geotrellis.raster.op.extent" data-isabs="false">
+    </li><li name="geotrellis.raster.op.extent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="extent"></a>
       <a id="extent:extent"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -127,7 +148,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="geotrellis.raster.op.focal" data-isabs="false">
+    </li><li name="geotrellis.raster.op.focal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="focal"></a>
       <a id="focal:focal"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -139,7 +161,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="geotrellis.raster.op.local" data-isabs="false">
+    </li><li name="geotrellis.raster.op.local" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="local"></a>
       <a id="local:local"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -151,7 +174,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="geotrellis.raster.op.tiles" data-isabs="false">
+    </li><li name="geotrellis.raster.op.tiles" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tiles"></a>
       <a id="tiles:tiles"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -163,7 +187,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="geotrellis.raster.op.transform" data-isabs="false">
+    </li><li name="geotrellis.raster.op.transform" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="transform"></a>
       <a id="transform:transform"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -175,14 +200,37 @@
       </span>
       </h4>
       
+    </li><li name="geotrellis.raster.op.zonal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="zonal"></a>
+      <a id="zonal:zonal"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="zonal/package.html"><span class="name">zonal</span></a>
+      </span>
+      </h4>
+      
     </li></ol>
             </div>
+
+        
 
         
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>
