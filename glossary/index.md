@@ -33,11 +33,11 @@ see [Map Algebra](#Map_Algebra)
 
 
 * #### Cell
-The smallest square in a grid.  A cell is the fundamental unit of a [raster](#raster) data set and is sometimes used interchangably with the term [pixel](Pixel).  Usually, it represents a rectangular area organized into an array of data values.
+The smallest square in a grid.  A cell is the fundamental unit of a [raster](#Raster_Data) data set and is sometimes used interchangably with the term [pixel](#Pixel).  Usually, it represents a rectangular area organized into an array of data values.
 
 
 * #### Cell Size
-The linear size in map units of the smallest area (the [cell](#Cell) or [pixel](#Pixel)) in a [raster](#Raster_Data) data set.  For example, most land cover data derived from the Landsat satellite is usually published with a 30 meter cell size.
+The linear size in map units of the smallest area (the [cell](#Cell) or [pixel](#Pixel) ) in a [raster](#Raster_Data) data set.  For example, most land cover data derived from the Landsat satellite is usually published with a 30 meter cell size.
 
 
 * #### Convolution
@@ -122,7 +122,7 @@ See also:
 
 
 * #### Kriging
-An [interpolation](#interpolation) technique in which measurement of spatial variation between the known points is used to estimate the unknown values being interpolated.
+An [interpolation](#Interpolation) technique in which measurement of spatial variation between the known points is used to estimate the unknown values being interpolated.
 
 
 * #### Local Operations
