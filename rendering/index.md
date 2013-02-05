@@ -56,18 +56,25 @@ from for representing your rasters to ease the transition from developer to
 cartographer, but you can create your own.  There are many good resources online 
 for selecting color ramps.
 
-### DIVERGING COLOR SCHEMES:
-<img style="float:right" src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/01_blue-to-orange.png" />
-Blue to Orange
-An 11-step diverging color ramp from blue to gray to orange. The gray critical class in the middle clearly shows a median or zero value. Example uses include temperature, climate, elevation, or other color ranges where it is necessary to distinguish categories with multiple hues.
+## DIVERGING COLOR SCHEMES
 
-Green to Orange
+## Blue to Orange
+<div height="250">
+<span style="float: right"> <img  src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/01_blue-to-orange.png" /> </span>
+<span>
+An 11-step diverging color ramp from blue to gray to orange. The gray critical class in the middle clearly shows a median or zero value. Example uses include temperature, climate, elevation, or other color ranges where it is necessary to distinguish categories with multiple hues.  
+</span>
+&nbsp;
+
+</div>
+
+## Green to Orange
 A 13-step diverging color ramp from green to orange. Example uses include elevation, relief maps, topography, or other color ranges where it is necessary to distinguish categories with multiple hues.
 
-Blue to Red
+## Blue to Red
 A 10-step diverging color ramp from blue to red. Example uses include elections and politics, voter swing, climate or temperature, or other color ranges where it is necessary to distinguish categories with multiple hues.
 
-Green to Red-Orange
+## Green to Red-Orange
 A 10-step diverging color ramp from green to red-orange. Example uses include elections and politics, voter swing, climate or temperature, or other color ranges where it is necessary to distinguish categories with multiple hues.
 
 ### SEQUENTIAL COLOR SCHEMES:
