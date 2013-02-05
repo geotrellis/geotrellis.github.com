@@ -3,7 +3,7 @@ layout: gettingstarted
 title: Parallel and Distributed Execution
 
 tutorial: gettingstarted
-num: 4
+num: 6
 ---
 
 ## Parallel and distributed execution

@@ -1,10 +1,9 @@
 ---
-layout: rendering
+layout: gettingstarted
 title: Rendering Images
 
-tutorial: rendering
-num: 1
-outof: 5
+tutorial: gettingstarted
+num: 4
 ---
 
 #### Rendering Images from a Raster
@@ -63,7 +62,7 @@ for selecting color ramps.
 #### Diverging Color Schemes
 
 <div class="ramp">
-<span class="floating"> <img  src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/01_blue-to-orange.png" /> </span>
+<span class="floating"> <img  src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/images/01_blue-to-orange.png" /> </span>
   <h2>Blue to Orange</h2>
   <span>
     <p>An 11-step diverging color ramp from blue to gray to orange. </p> 
@@ -74,7 +73,7 @@ for selecting color ramps.
 
 <div class="ramp">
   <span class="floating">
-    <img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/03_blue-to-red.png" />  </span>
+    <img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/images/03_blue-to-red.png" />  </span>
     <h2>Blue to Red</h2>
 
     <span>
@@ -85,7 +84,7 @@ for selecting color ramps.
 
 <div class="ramp">
   <span class="floating">
-    <img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/04_green-to-red-orange.png" /> </span>
+    <img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/images/04_green-to-red-orange.png" /> </span>
     <h2>Green to Red-Orange</h2>
     <span>
 <p>A 10-step diverging color ramp from green to red-orange.  </p>
@@ -96,7 +95,7 @@ for selecting color ramps.
 
 <div class="ramp">
   <span class="floating">
-    <img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/02_green-to-orange.png" /> </span>
+    <img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/images/02_green-to-orange.png" /> </span>
     <h2>Green to Orange</h2>
     <span>
 <p>A 13-step diverging color ramp from green to orange. </p>
@@ -108,41 +107,41 @@ for selecting color ramps.
 #### Sequential Color Schemes
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/05_light-to-dark-sunset.png" /></span>
+  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/images/05_light-to-dark-sunset.png" /></span>
   <h2>Light to Dark - Sunset</h2>
   <p>An 11-step sequential color ramp showing intensity from light to dark.</p>
   <p>This color ramp is perfect for showing density where it is critical to highlight very different values with bold colors at the higher, darker end of the ramp. Example uses include population density, accessibility, or ranking.</p>
 </div>
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/06_light-to-dark-green.png" /></span>
+  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/images/06_light-to-dark-green.png" /></span>
   <h2>Light to Dark - Green</h2>
   <p>A basic 8-step sequential color ramp showing light to dark in shades of green. Example uses include density, ordered data, ranking, or any map where darker colors represent higher data values and lighter colors represent lower data values, generally.</p>
 </div>
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/07_yellow-to-red-heatmap.png" /></span>
+  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/images/07_yellow-to-red-heatmap.png" /></span>
   <h2>Yellow to Red - Heatmap</h2>
   <p>An 8-step sequential heatmap from yellow to dark red.</p>
   <p>Great for heatmaps on a light basemap where the hottest values are more opaque or dark. Also useful for sequential color ranges where the lowest value is the median or zero value.</p>
 </div>
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/08_blue-to-yellow-to-red-heatmap.png" /></span>
+  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/images/08_blue-to-yellow-to-red-heatmap.png" /></span>
   <h2>Blue to Yellow to Red Spectrum - Heatmap</h2>
   <p>An 11-step heatmap from blue to yellow to red.</p>
   <p>Great for showing a wide range of values with clear differences in hue.</p>
 </div>
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/09_dark-red-to-yellow-heatmap.png" /></span>
+  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/images/09_dark-red-to-yellow-heatmap.png" /></span>
   <h2>Dark Red to Yellow-White - Heatmap</h2>
   <p>A 10-step sequential heatmap from dark red to yellow to white.</p>
   <p>Great for heatmaps where the hottest values should look more vibrant or intense.</p>
 </div>
 
 <div class="ramp">
-    <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/10_purple-to-dark-purple-to-white-heatmap.png" /></span>
+    <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/images/10_purple-to-dark-purple-to-white-heatmap.png" /></span>
   <h2>Light Purple to Dark Purple To White</h2>
   <p>An 8-step sequential heatmap to show intensity with shades of purple with white as the "hottest" value.</p>
   <p>Great for light or gray basemaps, or where the highest value needs to be called out visually.</p>
@@ -151,14 +150,14 @@ for selecting color ramps.
 #### Qualitative or Categorical Schemes
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/11_bold-land-use-qualitative.png" /></span>
+  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/images/11_bold-land-use-qualitative.png" /></span>
   <h2>Bold Land Use</h2>
   <p>An 8-hue qualitative scheme used to show a clear difference in categories that are unordered or very different.</p>
   <p>Example uses include zoning, land use, land cover, or maps where all categories or groups are equal in visual strength/magnitude.</p>
 </div>
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/12_muted-terrain-qualitative.png" /></span>
+  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/images/12_muted-terrain-qualitative.png" /></span>
   <h2>Muted Terrain</h2>
   <p>An 8-hue qualitative scheme used to show different kinds of map topology or features.</p>
   <p>This is generally used to show landforms, terrain, and topology.</p>

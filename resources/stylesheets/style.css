@@ -216,3 +216,11 @@ ul.trigger_list li a:hover{
 	color:#fff;
 
 }
+
+div.ramp {
+  overflow: auto;
+}
+
+div.ramp span {
+  float: left;
+}
