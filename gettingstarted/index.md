@@ -19,10 +19,6 @@ processing:
 - Parallelizing geoprocessing operations to take full advantage of multi-core
   architecture 
 
-GeoTrellis is a project of Azavea (www.azavea.com), and was written by Josh
-Marcus (jmarcus@azavea.com) and Erik Osheim (eosheim@azavea.com). Please
-contact us if you have any questions!
-
 #### Features
 
 - GeoTrellis is designed to help a developer create simple, standard REST
