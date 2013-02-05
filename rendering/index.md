@@ -57,7 +57,7 @@ cartographer, but you can create your own.  There are many good resources online
 for selecting color ramps.
 
 ### DIVERGING COLOR SCHEMES:
-
+<img style="float:right" src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/01_blue-to-orange.png" />
 Blue to Orange
 An 11-step diverging color ramp from blue to gray to orange. The gray critical class in the middle clearly shows a median or zero value. Example uses include temperature, climate, elevation, or other color ranges where it is necessary to distinguish categories with multiple hues.
 
