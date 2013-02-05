@@ -58,18 +58,30 @@ for selecting color ramps.
 
 ## DIVERGING COLOR SCHEMES
 
-## Blue to Orange
-<div height="250">
+<div >
 <span style="float: right"> <img  src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/01_blue-to-orange.png" /> </span>
+<h2>Blue to Orange</h2>
 <span>
-An 11-step diverging color ramp from blue to gray to orange. The gray critical class in the middle clearly shows a median or zero value. Example uses include temperature, climate, elevation, or other color ranges where it is necessary to distinguish categories with multiple hues.  
+An 11-step diverging color ramp from blue to gray to orange. <br/>
+
+The gray critical class in the middle clearly shows a median or zero value. Example uses include temperature, climate, elevation, or other color ranges where it is necessary to distinguish categories with multiple hues.  
 </span>
-&nbsp;
-
 </div>
+### Usage
+      val png = SimpleRenderPNG(raster, ColorRamps.BlueToOrange)
 
-## Green to Orange
-A 13-step diverging color ramp from green to orange. Example uses include elevation, relief maps, topography, or other color ranges where it is necessary to distinguish categories with multiple hues.
+<div>
+  <span style="float: right">
+    <img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/01_blue-to-orange.png" /> </span>
+    <h2>Green to Orange</h2>
+    <span>
+A 13-step diverging color ramp from green to orange. <br/>
+
+Example uses include elevation, relief maps, topography, or other color ranges where it is necessary to distinguish categories with multiple hues.
+</span>
+</div>
+### Usage
+      val png = SimpleRenderPNG(raster, ColorRamps.BlueToOrange)
 
 ## Blue to Red
 A 10-step diverging color ramp from blue to red. Example uses include elections and politics, voter swing, climate or temperature, or other color ranges where it is necessary to distinguish categories with multiple hues.
