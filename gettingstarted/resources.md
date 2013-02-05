@@ -3,7 +3,7 @@ layout: gettingstarted
 title: Geotrellis Resources
 
 tutorial: gettingstarted
-num: 5
+num: 2
 ---
 
 #### Mailing list and IRC

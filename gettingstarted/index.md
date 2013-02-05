@@ -4,7 +4,7 @@ title: Introduction
 
 tutorial: gettingstarted
 num: 1
-outof: 5
+outof: 6
 ---
 *GeoTrellis* is a high performance geoprocessing engine and programming
 toolkit. The goal of the project is to transform user interaction with

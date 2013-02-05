@@ -3,7 +3,7 @@ layout: gettingstarted
 title: Raster Data Types and Data Conversions
 
 tutorial: gettingstarted
-num: 3
+num: 5
 ---
 
 #### Data Types

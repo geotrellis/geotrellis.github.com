@@ -3,7 +3,7 @@ layout: gettingstarted
 title: Setting Up GeoTrellis
 
 tutorial: gettingstarted
-num: 2
+num: 3
 ---
 
 ### Configuration

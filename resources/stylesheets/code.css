@@ -4,3 +4,14 @@ pre, code, tt {
     line-height:1.5;
     font-family: 'andale mono', 'lucida console', monospace;
 }
+
+
+div.ramp {
+  overflow: auto;
+}
+
+div.ramp span.floating {
+  float: left;
+  padding-right: 5px;
+}
+
