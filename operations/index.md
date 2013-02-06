@@ -4,7 +4,7 @@ title: Introduction
 
 tutorial: operations
 num: 1
-outof: 5
+outof: 10
 ---
 
 #### What are Operations?
