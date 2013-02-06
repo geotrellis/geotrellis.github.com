@@ -22,7 +22,7 @@ values.  One common way to represent raster data visually on a map
 is to divide up the values of the data into different categories called classes,
 and then represent each class on the map with its own color.  Each class has
 an lower and upper limit that defines what values falls within it.  For example,
-a class might contain values between 0 and 10.  We call these limits "class breaks".
+a class might contain values between 0 and 10.  We call these limits *class breaks*.
 
 When rendering a raster, you can either manually determine the class breaks or
 use an automatic classification scheme.  For example, if you were creating a map
