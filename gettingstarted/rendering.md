@@ -3,7 +3,8 @@ layout: gettingstarted
 title: Rendering Images
 
 tutorial: gettingstarted
-num: 4
+num: 7
+outof: 9
 ---
 
 #### Rendering Images from a Raster
@@ -17,7 +18,7 @@ a rank between 1 and 5 or a landcover raster in which each value is a different
 kind of land use (e.g. 11 for water or 40 for forest).  In these cases,
 it makes sense to assign each value its own color.  But when raster values
 represents counts, measurements, or ratios, there are usually many distinct
-values.  One common way to represent raster data visually on a map 
+values.  One common way to represent raster data visually on a map
 is to divide up the values of the data into different categories called classes,
 and then represent each class on the map with its own color.  Each class has
 an lower and upper limit that defines what values falls within it.  For example,
@@ -25,13 +26,13 @@ a class might contain values between 0 and 10.  We call these limits "class brea
 
 When rendering a raster, you can either manually determine the class breaks or
 use an automatic classification scheme.  For example, if you were creating a map
-of average household income, you might want one of the classes to be defined as 
+of average household income, you might want one of the classes to be defined as
 below the federal poverty guidelines or above the national average.
 
 #### Classification
 
-By default, GeoTrellis will create *quantile* class breaks for your raster.  
-The intuitive idea of a quantile break is that there should be an equal number of 
+By default, GeoTrellis will create *quantile* class breaks for your raster.
+The intuitive idea of a quantile break is that there should be an equal number of
 cells in each class.  For example, if most cells in our income map have incomes
 below the national average, we would generate more classes for that range of
 values and only a few classes for higher income ranges, even though those
@@ -45,14 +46,14 @@ same for each class.  For example, if we want 5 linear breaks between 0 and 50,
 the classes would be 0-10, 10-20, 20-30, 30-40, and 40-50.
 
 There are other classification schemes that GeoTrellis does not currently
-support, such as Natural breaks (Jenks) and Standard Deviation, but we 
+support, such as Natural breaks (Jenks) and Standard Deviation, but we
 intend to implement them in the future.  Let us know if you have a need.
 
 #### Color Ramps
 
-GeoTrellis provides a set of color ramps (a list of colors) for you to choose 
-from for representing your rasters to ease the transition from developer to 
-cartographer, but you can create your own.  There are many good resources online 
+GeoTrellis provides a set of color ramps (a list of colors) for you to choose
+from for representing your rasters to ease the transition from developer to
+cartographer, but you can create your own.  There are many good resources online
 for selecting color ramps.
 
 ## Usage
@@ -65,7 +66,7 @@ for selecting color ramps.
 <span class="floating"> <img  src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/images/01_blue-to-orange.png" /> </span>
   <h2>Blue to Orange</h2>
   <span>
-    <p>An 11-step diverging color ramp from blue to gray to orange. </p> 
+    <p>An 11-step diverging color ramp from blue to gray to orange. </p>
     <p>The gray critical class in the middle clearly shows a median or zero value. Example uses include temperature, climate, elevation, or other color ranges where it is necessary to distinguish categories with multiple hues.</p>
   </span>
 </div>
@@ -167,7 +168,7 @@ for selecting color ramps.
 ### Customizing Color Ramps
 
 You can create your own color ramp with a list of RGB hex color values.  If you like,
-you can use an online tool for generating colors for cartography like [colorbrewer](http://colorbrewer2.org/js/). 
+you can use an online tool for generating colors for cartography like [colorbrewer](http://colorbrewer2.org/js/).
 
     import geotrellis.data.ColorRamp
 
@@ -178,12 +179,12 @@ By default, GeoTrellis will generate a number of classes to match the number of
 colors in the color ramp.  You can ask GeoTrellis to generate a new ramp by
 generating  a requested number of new breaks using an existing color ramp as
 a guide.  The first and last colors will be the first and last colors from the
-existing color ramp, and the rest will be interpolated.  For example, given a 
-color ramp of two colors, red and yellow, a request for 5 colors would return 
-Red, Yellowish-Red, Orange, Reddish-Yellow, Yellow.  
+existing color ramp, and the rest will be interpolated.  For example, given a
+color ramp of two colors, red and yellow, a request for 5 colors would return
+Red, Yellowish-Red, Orange, Reddish-Yellow, Yellow.
 
     import geotrellis.data._
-  
+
     ## Create a color ramp with red and yellow
     val ramp = ColorRamp.createWithRGBColors(0xFF0000, 0xFFFF00)
     val newRamp = ramp.interpolate(5)
@@ -204,5 +205,5 @@ Internally to GeoTrellis, colors are represented as RGBA values, which includes
 a value for transparency.  These can be represented with 8 instead of 6 hex characters
 (with the alpha opacity value being the last two charcters) such as 0xFF0000FF
 for opaque red.  When using the programming interface, just be sure to keep the
-distinction in mind and, when using RGB values, be sure to use the utility 
+distinction in mind and, when using RGB values, be sure to use the utility
 methods that convert them into RGBA values (such as ColorRamp.createWithRGBColors).
