@@ -24,14 +24,11 @@ and then represent each class on the map with its own color.  Each class has
 an lower and upper limit that defines what values falls within it.  For example,
 a class might contain values between 0 and 10.  We call these limits *class breaks*.
 
-When rendering a raster, you can either manually determine the class breaks or
-use an automatic classification scheme.  For example, if you were creating a map
-of average household income, you might want one of the classes to be defined as 
-below the federal poverty guidelines or above the national average.
+When rendering a raster in GeoTrellis, you can either use one of the automated classification schemes or manually determine the class breaks.  For example, if you were creating a map of average household income, you might want one of the classes to be defined as below the federal poverty guidelines (manual classification) or organized into several equal intervals between the minimum and maximum (using the built-in linear breaks classification scheme).
 
 #### Classification
 
-By default, GeoTrellis will create *quantile* class breaks for your raster.  
+GeoTrellis is able to generate two types of class breaks:  quantile and linear.  By default, GeoTrellis will create *quantile* class breaks for your raster.  
 The intuitive idea of a quantile break is that there should be an equal number of 
 cells in each class.  For example, if most cells in our income map have incomes
 below the national average, we would generate more classes for that range of
@@ -40,7 +37,7 @@ ranges will have a bigger difference between the low and high limits.  This
 classification scheme is particularly good at emphasizing highlights or hotspots
 where values are particularly high or low.
 
-Linear breaks simply divides up the values between the lowest value and the
+You can also request linear breaks (or "equal interval" breaks).  Linear breaks simply divides up the values between the lowest value and the
 highest value, with the difference between the low and high limit being the
 same for each class.  For example, if we want 5 linear breaks between 0 and 50,
 the classes would be 0-10, 10-20, 20-30, 30-40, and 40-50.
@@ -51,9 +48,8 @@ intend to implement them in the future.  Let us know if you have a need.
 
 #### Color Ramps
 
-GeoTrellis provides a set of color ramps (a list of colors) for you to choose 
-from for representing your rasters to ease the transition from developer to 
-cartographer, but you can create your own.  There are many good resources online 
+GeoTrellis provides a set of color ramps (a list of colors) from which to choose.  These are provided to ease the transition from developer to 
+cartographer.  However, you need not feel constrained by these and can use your own color palettes as well.  There are many good resources online 
 for selecting color ramps.
 
 ## Usage
@@ -117,7 +113,8 @@ for selecting color ramps.
 <div class="ramp">
   <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/06_light-to-dark-green.png" /></span>
   <h2>Light to Dark - Green</h2>
-  <p>A basic 8-step sequential color ramp showing light to dark in shades of green. Example uses include density, ordered data, ranking, or any map where darker colors represent higher data values and lighter colors represent lower data values, generally.</p>
+  <p>A basic 8-step sequential color ramp showing light to dark in shades of green.</p>
+  <p>Example uses include density, ordered data, ranking, or any map where darker colors represent higher data values and lighter colors represent lower data values, generally.</p>
 </div>
 
 <div class="ramp">
@@ -167,12 +164,11 @@ for selecting color ramps.
 
 ### Customizing Color Ramps
 
-You can create your own color ramp with a list of RGB hex color values.  If you like,
-you can use an online tool for generating colors for cartography like [colorbrewer](http://colorbrewer2.org/js/). 
+You can create your own color ramp with a list of RGB hex color values.  
 
     import geotrellis.data.ColorRamp
 
-    ## Generate a color ramp with red (#FF0000), green (#00FF00), blue (0000FF)
+## Generate a color ramp with red (#FF0000), green (#00FF00), blue (0000FF)
     val ramp = ColorRamp.createWithRGBColors(0xFF0000, 0x00FF00, 0x0000FF)
 
 By default, GeoTrellis will generate a number of classes to match the number of
@@ -192,8 +188,15 @@ Red, Yellowish-Red, Orange, Reddish-Yellow, Yellow.
     ## Create a 15 class ramp from an existing ramp
     val fifteenColors = ColorRamps.BlueToOrange.interpolate(15)
 
-See the [geotrellis.data.ColorRamp scala docs] for additional functionality,
-including adding an alpha gradient to your color ramp.
+There are many online and offline resources for generating color palettes for cartography including:  
++ [ColorBrewer 2.0](http://colorbrewer2.org/js/)
++ [Cartographer's Toolkit: Colors, Typography, Patterns](http://www.amazon.com/Cartographers-Toolkit-Colors-Typography-Patterns/dp/0615467946), by Gretchen N. Peterson
++ [Designing Better Maps](http://www.amazon.com/Designing-Better-Maps-Guide-Users/dp/1589480899/), by Cynthia A. Brewer
++ [Designed Maps: A Sourcebook](http://www.amazon.com/Designed-Maps-Sourcebook-GIS-Users/dp/1589481607/), by Cynthia A. Brewer
+
+
+See the [geotrellis.data.ColorRamp scala docs](http://geotrellis.github.com/0.8/api/#geotrellis.data.ColorRamp) for additional functionality,
+including adding an alpha gradient to your color ramp.  
 
 ### RGBA vs RGB values
 
