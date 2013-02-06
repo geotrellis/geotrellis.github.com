@@ -3,7 +3,8 @@ layout: gettingstarted
 title: Rendering Images
 
 tutorial: gettingstarted
-num: 4
+num: 7
+outof: 9
 ---
 
 #### Rendering Images from a Raster

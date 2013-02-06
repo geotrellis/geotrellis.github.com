@@ -4,10 +4,11 @@ title: Geotrellis Resources
 
 tutorial: gettingstarted
 num: 2
+outof: 9
 ---
 
 #### Mailing list and IRC
-You can find us on IRC at #geotrellis on freenode, or join the [geotrellis-user mailing list](https://groups.google.com/group/geotrellis-user).  We're always interested in what you're working on, if we can help, and any feedback you might have.  If you'd like to contact us directly, send an email to Josh at jmarcus@azavea.com.  
+You can find us on IRC at #geotrellis on freenode, or join the [geotrellis-user mailing list](https://groups.google.com/group/geotrellis-user).  We're always interested in what you're working on, if we can help, and any feedback you might have.  If you'd like to contact us directly, send an email to Josh at jmarcus@azavea.com.
 
 #### Scaladocs
 

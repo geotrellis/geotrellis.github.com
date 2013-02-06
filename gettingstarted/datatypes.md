@@ -3,7 +3,8 @@ layout: gettingstarted
 title: Raster Data Types and Data Conversions
 
 tutorial: gettingstarted
-num: 5
+num: 8
+outof: 9
 ---
 
 #### Data Types
