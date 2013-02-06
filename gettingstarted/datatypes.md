@@ -37,7 +37,7 @@ and floating-point calculations. All integral calculations are done in terms of
 `Int` and all floating-point calculations are done in terms of `Double`.
 Calculations resulting in data which cannot be exactly represented in the
 underlying type will be truncated or otherwise reduced. If this behavior is not
-desired, manual conversions to a wider type can be performed. 
+desired, manual conversions to a wider type can be performed.
 
 Some calculations will use the raster's underlying type while others will
 specify a particular type. For instance, bitwise operations will always occur
@@ -56,7 +56,7 @@ optimizes these conversions by performing them lazily. For instance:
     // Apply conversion to Double.
     val converted = raster.convert(TypeDouble)
 
-    // No data has been not converted yet; 
+    // No data has been not converted yet;
     // future operations will apply conversion.
 
     // result contains Double values.

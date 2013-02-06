@@ -16,7 +16,7 @@ If you want to dive directly into the code, you can find *Scaladocs*, the Scala 
 
 #### Template Project
 
-We have provided a sample project that provides a template for creating a 
+We have provided a sample project that provides a template for creating a
 geoprocessing web service with GeoTrellis. It is a blank slate for your own
 development that provides a development environment that is set up with the
 necessary dependencies in place, making it a little easier to get started.
