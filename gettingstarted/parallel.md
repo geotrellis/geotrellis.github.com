@@ -30,7 +30,7 @@ execution.
     local.Add(r1,r2,r3).remote(cluster)
 
 The remote cluster or server is an Akka actor or load balancer, defined using
-the Akka library configuration. See the [Akka documenation](http://akka.io/docs/akka/2.0-M4)
+the Akka library configuration. See the [Akka documenation](http://akka.io/docs/akka/2.0)
 for more information. Akka configuration can be placed directly in your
 GeoTrellis configuration file (application.conf).
 
@@ -40,7 +40,7 @@ time overhead depends on the network and the size of the rasters.
 
 #### Architecture Concepts
 Behind the scenes, GeoTrellis is using the actor model for parallel and
-distributed computation--the primary abstraction is message passing instead of
+distributed computation -- the primary abstraction is message passing instead of
 shared memory. This event-based model allows us to re-use the same threads by
 interleaving calculations for different processes on the same threads, but
 requires operations to be asynchronous. Operations are not allowed to block

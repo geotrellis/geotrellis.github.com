@@ -12,13 +12,13 @@ You can find us on IRC at #geotrellis on freenode, or join the [geotrellis-user 
 
 #### Scaladocs
 
-If you want to dive directly into the code, you can find *Scaladocs*, the Scala API documentation, for the latest version of the project [here]($siteBaseUrl$/latest/api/index.html#geotrellis.package).  You can also track the current development of GeoTrellis [at our github repository](http://github.com/azavea/geotrellis).
+If you want to dive directly into the code, you can find *Scaladocs*, the Scala API documentation, for the latest version of the project [here]({{site.baseurl}}/latest/api/index.html#geotrellis.package).  You can also track the current development of GeoTrellis [at our github repository](http://github.com/geotrellis/geotrellis).
 
 #### Template Project
 
 We have provided a sample project that provides a template for creating a
 geoprocessing web service with GeoTrellis. It is a blank slate for your own
-development that provides a development environment that is set up with the
+development that provides an environment set up with the
 necessary dependencies in place, making it a little easier to get started.
 
 The project loads GeoTrellis as a library, includes some basic configuration,
@@ -31,6 +31,6 @@ own geoprocessing service.
 
 #### Demonstration project
 
-The /demo directory in the github repository includes code from the tutorial (in this guide) and a
+The [/demo directory in the github repository](https://github.com/geotrellis/geotrellis/tree/master/demo) includes code from the [web service tutorial]({{site.baseurl}}/tutorials/webservice.html) and a
 demonstration project that provides a REST service that performs a geoprocessing operation and returns a
 PNG image to the user.

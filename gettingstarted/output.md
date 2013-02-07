@@ -13,10 +13,10 @@ outof: 9
 
 GeoTrellis has a suite of statistics operations that can be run on
 rasters. Most of the simple statistic operations are in the
-[*statistics* package](http://geotrellis.github.com/geotrellis/latest/api/#geotrellis.statistics.op.stat.package).
+[*statistics* package]({{site.baseurl}}/latest/api/#geotrellis.statistics.op.stat.package).
 
 To get a histogram, for example, you can use the
-[*stat.GetHistogram* operation](http://geotrellis.github.com/geotrellis/latest/api/#geotrellis.statistics.op.stat.GetHistogram$).
+[*stat.GetHistogram* operation]({{site.baseurl}}/latest/api/#geotrellis.statistics.op.stat.GetHistogram$).
 
 There are two types of histograms in GeoTrellis. One that uses a
 hashtable to store the values and another that uses an array. The
@@ -29,12 +29,12 @@ to the largest value in the raster.
 
     // If we know the maximum value in our raster we can gain
     // a huge speed boost by providing that as an input to GetHistogram
-    val arrayBasedHistOp:Op[Histogram] = stat.GetHistogram(rasterOp,
-    1000)
+    val arrayBasedHistOp:Op[Histogram] = 
+        stat.GetHistogram(rasterOp,1000)
 
 
 The Image Rendering APIs are covered in the
-[Rendering Images](/gettingstarted/rendering.html) section.
+[Rendering Images]({{site.baseurl}}/gettingstarted/rendering.html) section.
 
 #### Images
 
@@ -58,23 +58,22 @@ services.
     class SomeResource {
       def extentFromPoint(p: Point[_]) =
           Extent(p.geom.x, p.geom.y,
-                p.geom.x, p.geom.y
+                 p.geom.x, p.geom.y)
 
       @GET
       def heatmap() = {
          val pts:Seq[Point[Int]] = // get points from somewhere
 
          // Create an extent from the points
-         val extent = pts.map { p =>
-                            extentFromPoint(p) }
-                         .reduceLeft { (e1,e2) =>
-                            e1.combine(e2) }
+         val extent = pts.map { p => extentFromPoint(p) }
+                         .reduceLeft { (e1,e2) => e1.combine(e2) }
 
          // Wrap this in a raster extent
          val width = 500
          val height = 500
 
-         val rasterExtent = new extent.GetRasterExtent(extent, width, height)
+         val rasterExtent = 
+             new extent.GetRasterExtent(extent, width, height)
 
          // Transformation on vector types
          // In this case we have Points containing integers (type of
@@ -83,15 +82,15 @@ services.
          val tx = (a: Int) => a
 
          // Here we're using a Gaussian kernel
-         val kernel:Op[Kernel] = focal.CreateGaussianRaster(40,1,1,15,100)
+         val kernel:Op[Kernel] = 
+             focal.CreateGaussianRaster(40,1,1,15,100)
 
          // A heatmap is just a kernel density operation
          val heatmapOp:Op[Raster] =
-            focal.KernelDensity(pts, tx, kernel, rasterExtent)
+             focal.KernelDensity(pts, tx, kernel, rasterExtent)
 
          Response.ok(data).`type`("image/png").build()
       }
-
     }
 
 #### File System
@@ -107,9 +106,9 @@ intermediate products you can write your arg files to disk.
     val data:RasterData = raster.data
     val path = "/path/to/write/raster/"
 
-    // It is possible we're working with tiled data
-    // in which case we can't just get a writer for
-    // it
+    // It is possible we're working with tiled data,
+    // in which case we can't just use the default 
+    // writer to write out the tiles.
     val writer:Option[Writer] =
          data.asArray map { arrayRasterData =>
               new ArgWriter(arrayRasterData.getType)
@@ -118,6 +117,8 @@ intermediate products you can write your arg files to disk.
           }
 
     writer match {
-         case Some(writer) => writer.write(path, raster, "raster name")
-         case None => sys.error("Could not write non-array backed raster")
+         case Some(writer) => 
+             writer.write(path, raster, "raster name")
+         case None => 
+             sys.error("Could not write non-array backed raster")
     }
