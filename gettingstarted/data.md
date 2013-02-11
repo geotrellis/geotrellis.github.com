@@ -19,7 +19,7 @@ For more info about getting your data into the ARG format check out the
 #### Loading Directly from the File System
 
 GeoTrellis can load ARG files directly with the [*io.LoadFile*](
-http://geotrellis.github.com/geotrellis/latest/api/#geotrellis.io.LoadFile)
+{{site.baseurl}}/latest/api/#geotrellis.io.LoadFile)
 operation.
 
      val raster:Op[Raster] = io.LoadFile("/path/to/raster.arg")
@@ -51,7 +51,7 @@ are arg files. This means that you must not store the catalog file in
 the same directory.
 
 To get rasters that are based on a catalog you can use the
-[*io.LoadRaster*](http://geotrellis.github.com/geotrellis/latest/api/#geotrellis.io.LoadRaster) operation. In addition, you need to tell your
+[*io.LoadRaster*]({{site.baseurl}}/latest/api/#geotrellis.io.LoadRaster) operation. In addition, you need to tell your
 execution server where the catalog file is.
 
      // Bind our catalog to the server
@@ -64,7 +64,7 @@ execution server where the catalog file is.
      val raster:Raster = server.run(rasterOp)
 
 Operations for loading and writing data can be found in the
-[*geotrellis.io* package](http://geotrellis.github.com/geotrellis/latest/api/#geotrellis.io.package)
+[*geotrellis.io* package]({{site.baseurl}}/latest/api/#geotrellis.io.package)
 
 #### Creating New Rasters
 
@@ -96,7 +96,8 @@ wrapping an *ArrayRasterData* with a *Raster*.
 
     for(col <- 0 until cols ;
         row <- 0 until row) {
-        val dist = math.sqrt((xg - col) * (xg - col) + (yg - row)*(yg -row))
+        val dist = math.sqrt((xg - col) * (xg - col) + 
+                             (yg - row) * (yg - row))
         arrayData.setDouble(col, row, resolution * dist)
     }
 
@@ -161,4 +162,4 @@ a PostGIS database.
 #### Tiles
 
 If you have a really large data set that doesn't easily fit into memory
-you can create tiled rasters.
+you can create tiled rasters. 

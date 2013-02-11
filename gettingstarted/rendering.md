@@ -28,7 +28,8 @@ When rendering a raster in GeoTrellis, you can either use one of the automated c
 
 #### Classification
 
-GeoTrellis is able to generate two types of class breaks:  quantile and linear.  By default, GeoTrellis will create *quantile* class breaks for your raster.  
+GeoTrellis is able to generate two types of class breaks:  quantile and linear.  
+By default, GeoTrellis will create *quantile* class breaks for your raster.  
 The intuitive idea of a quantile break is that there should be an equal number of 
 cells in each class.  For example, if most cells in our income map have incomes
 below the national average, we would generate more classes for that range of
@@ -59,7 +60,7 @@ for selecting color ramps.
 #### Diverging Color Schemes
 
 <div class="ramp">
-<span class="floating"> <img  src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/01_blue-to-orange.png" /> </span>
+<span class="floating"> <img  src="{{site.baseurl}}/images/01_blue-to-orange.png" /> </span>
   <h2>Blue to Orange</h2>
   <span>
     <p>An 11-step diverging color ramp from blue to gray to orange. </p> 
@@ -67,10 +68,9 @@ for selecting color ramps.
   </span>
 </div>
 
-
 <div class="ramp">
   <span class="floating">
-    <img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/03_blue-to-red.png" />  </span>
+    <img src="{{site.baseurl}}/images/03_blue-to-red.png" />  </span>
     <h2>Blue to Red</h2>
 
     <span>
@@ -81,7 +81,7 @@ for selecting color ramps.
 
 <div class="ramp">
   <span class="floating">
-    <img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/04_green-to-red-orange.png" /> </span>
+    <img src="{{site.baseurl}}/images/04_green-to-red-orange.png" /> </span>
     <h2>Green to Red-Orange</h2>
     <span>
 <p>A 10-step diverging color ramp from green to red-orange.  </p>
@@ -92,7 +92,7 @@ for selecting color ramps.
 
 <div class="ramp">
   <span class="floating">
-    <img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/02_green-to-orange.png" /> </span>
+    <img src="{{site.baseurl}}/images/02_green-to-orange.png" /> </span>
     <h2>Green to Orange</h2>
     <span>
 <p>A 13-step diverging color ramp from green to orange. </p>
@@ -100,46 +100,45 @@ for selecting color ramps.
 </span>
 </div>
 
-
 #### Sequential Color Schemes
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/05_light-to-dark-sunset.png" /></span>
+  <span class="floating"><img src="{{site.baseurl}}/images/05_light-to-dark-sunset.png" /></span>
   <h2>Light to Dark - Sunset</h2>
   <p>An 11-step sequential color ramp showing intensity from light to dark.</p>
   <p>This color ramp is perfect for showing density where it is critical to highlight very different values with bold colors at the higher, darker end of the ramp. Example uses include population density, accessibility, or ranking.</p>
 </div>
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/06_light-to-dark-green.png" /></span>
+  <span class="floating"><img src="{{site.baseurl}}/images/06_light-to-dark-green.png" /></span>
   <h2>Light to Dark - Green</h2>
   <p>A basic 8-step sequential color ramp showing light to dark in shades of green.</p>
   <p>Example uses include density, ordered data, ranking, or any map where darker colors represent higher data values and lighter colors represent lower data values, generally.</p>
 </div>
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/07_yellow-to-red-heatmap.png" /></span>
+  <span class="floating"><img src="{{site.baseurl}}/images/07_yellow-to-red-heatmap.png" /></span>
   <h2>Yellow to Red - Heatmap</h2>
   <p>An 8-step sequential heatmap from yellow to dark red.</p>
   <p>Great for heatmaps on a light basemap where the hottest values are more opaque or dark. Also useful for sequential color ranges where the lowest value is the median or zero value.</p>
 </div>
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/08_blue-to-yellow-to-red-heatmap.png" /></span>
+  <span class="floating"><img src="{{site.baseurl}}/images/08_blue-to-yellow-to-red-heatmap.png" /></span>
   <h2>Blue to Yellow to Red Spectrum - Heatmap</h2>
   <p>An 11-step heatmap from blue to yellow to red.</p>
   <p>Great for showing a wide range of values with clear differences in hue.</p>
 </div>
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/09_dark-red-to-yellow-heatmap.png" /></span>
+  <span class="floating"><img src="{{site.baseurl}}/images/09_dark-red-to-yellow-heatmap.png" /></span>
   <h2>Dark Red to Yellow-White - Heatmap</h2>
   <p>A 10-step sequential heatmap from dark red to yellow to white.</p>
   <p>Great for heatmaps where the hottest values should look more vibrant or intense.</p>
 </div>
 
 <div class="ramp">
-    <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/10_purple-to-dark-purple-to-white-heatmap.png" /></span>
+    <span class="floating"><img src="{{site.baseurl}}/images/10_purple-to-dark-purple-to-white-heatmap.png" /></span>
   <h2>Light Purple to Dark Purple To White</h2>
   <p>An 8-step sequential heatmap to show intensity with shades of purple with white as the "hottest" value.</p>
   <p>Great for light or gray basemaps, or where the highest value needs to be called out visually.</p>
@@ -148,19 +147,18 @@ for selecting color ramps.
 #### Qualitative or Categorical Schemes
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/11_bold-land-use-qualitative.png" /></span>
+  <span class="floating"><img src="{{site.baseurl}}/images/11_bold-land-use-qualitative.png" /></span>
   <h2>Bold Land Use</h2>
   <p>An 8-hue qualitative scheme used to show a clear difference in categories that are unordered or very different.</p>
   <p>Example uses include zoning, land use, land cover, or maps where all categories or groups are equal in visual strength/magnitude.</p>
 </div>
 
 <div class="ramp">
-  <span class="floating"><img src="https://raw.github.com/joshmarcus/geotrellis.github.com/master/rendering/12_muted-terrain-qualitative.png" /></span>
+  <span class="floating"><img src="{{site.baseurl}}/images/12_muted-terrain-qualitative.png" /></span>
   <h2>Muted Terrain</h2>
   <p>An 8-hue qualitative scheme used to show different kinds of map topology or features.</p>
   <p>This is generally used to show landforms, terrain, and topology.</p>
 </div>
-
 
 ### Customizing Color Ramps
 
@@ -169,7 +167,8 @@ You can create your own color ramp with a list of RGB hex color values.
     import geotrellis.data.ColorRamp
 
 ## Generate a color ramp with red (#FF0000), green (#00FF00), blue (0000FF)
-    val ramp = ColorRamp.createWithRGBColors(0xFF0000, 0x00FF00, 0x0000FF)
+    val ramp = 
+        ColorRamp.createWithRGBColors(0xFF0000, 0x00FF00, 0x0000FF)
 
 By default, GeoTrellis will generate a number of classes to match the number of
 colors in the color ramp.  You can ask GeoTrellis to generate a new ramp by
@@ -194,8 +193,7 @@ There are many online and offline resources for generating color palettes for ca
 + [Designing Better Maps](http://www.amazon.com/Designing-Better-Maps-Guide-Users/dp/1589480899/), by Cynthia A. Brewer
 + [Designed Maps: A Sourcebook](http://www.amazon.com/Designed-Maps-Sourcebook-GIS-Users/dp/1589481607/), by Cynthia A. Brewer
 
-
-See the [geotrellis.data.ColorRamp scala docs](http://geotrellis.github.com/0.8/api/#geotrellis.data.ColorRamp) for additional functionality,
+See the [geotrellis.data.ColorRamp scala docs]({{site.baseurl}}/0.8/api/#geotrellis.data.ColorRamp) for additional functionality,
 including adding an alpha gradient to your color ramp.  
 
 ### RGBA vs RGB values
@@ -209,4 +207,4 @@ a value for transparency.  These can be represented with 8 instead of 6 hex char
 (with the alpha opacity value being the last two charcters) such as 0xFF0000FF
 for opaque red.  When using the programming interface, just be sure to keep the
 distinction in mind and, when using RGB values, be sure to use the utility 
-methods that convert them into RGBA values (such as ColorRamp.createWithRGBColors).
+methods that convert them into RGBA values (such as [ColorRamp.createWithRGBColors]({{site.baseurl}}/0.8/api/#geotrellis.data.ColorRamp$)).
