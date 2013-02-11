@@ -3,7 +3,7 @@ layout: operations
 title: Misc.
 
 tutorial: operations
-num: 8
+num: 9
 ---
 
 #### Statistics operations

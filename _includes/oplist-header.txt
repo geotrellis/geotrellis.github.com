@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" href="{{ site.baseurl }}/resources/favicon.ico">
 
     <!-- prettify js and CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/resources/stylesheets/scaladoc_template.css" type="text/css" />
     <link rel="stylesheet" href="{{ site.baseurl }}/resources/stylesheets/prettify.css" type="text/css" />
     <script src="{{ site.baseurl }}/resources/javascript/prettify/prettify.js" type="text/javascript" ></script>
 

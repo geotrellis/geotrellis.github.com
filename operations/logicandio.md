@@ -3,7 +3,7 @@ layout: operations
 title: Logic and IO
 
 tutorial: operations
-num: 7
+num: 8
 ---
 
 These sets of operation are relevant to all compound operations as they are used to load data, produce output formats, and as the functional programming constructs that are critical to operation composition.
