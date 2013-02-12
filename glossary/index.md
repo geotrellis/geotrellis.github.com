@@ -43,7 +43,7 @@ The linear size in map units of the smallest area (the [cell](#Cell) or [pixel](
 * #### Convolution
 A type of [Focal](#Focal_Operations) operation in which a numerical weight is applied to each cell in the neighborhood (or "kernel").  [Kernel Density](#Kernel_Density_Estimation) (KDE) is an example of a convolution, but they can be used for many purposes.  In Map Algebra terms, a convolution is a FocalDistribution operation.   
 See also:
-   - [GeoTrellis Docs - Convolve Operation](http://azavea.github.com/geotrellis/latest/api/#geotrellis.raster.op.focal.Convolve)
+   - [GeoTrellis Docs - Convolve Operation](http://geotrellis.github.com/api.doc/latest/api/#geotrellis.raster.op.focal.Convolve)
 
 
 * #### Coordinate System
@@ -117,7 +117,7 @@ See also:
    - [Wikipedia: Kernel Density Estimation](http://en.wikipedia.org/wiki/Kernel_density_estimation)
    - [ArcGIS Resource Center - Understanding Density Analysis](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/Understanding_density_analysis/009z0000000w000000/)
    - [ArcGIS Resource Center - How Kernel Density Works](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/How_Kernel_Density_works/009z00000011000000/)
-   - [GeoTrellis Docs - KernelDensity operation](http://azavea.github.com/geotrellis/latest/api/#geotrellis.raster.op.focal.KernelDensity)
+   - [GeoTrellis Docs - KernelDensity operation](http://geotrellis.github.com/api.doc/latest/api/#geotrellis.raster.op.focal.KernelDensity)
    - [Applying Map Algebra – Part 1](http://www.azavea.com/blogs/atlas/2013/01/applying-map-algebra-part-1/)
 
 
