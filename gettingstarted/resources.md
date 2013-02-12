@@ -12,7 +12,7 @@ You can find us on IRC at #geotrellis on freenode, or join the [geotrellis-user 
 
 #### Scaladocs
 
-If you want to dive directly into the code, you can find *Scaladocs*, the Scala API documentation, for the latest version of the project [here]({{site.baseurl}}/latest/api/index.html#geotrellis.package).  You can also track the current development of GeoTrellis [at our github repository](http://github.com/geotrellis/geotrellis).
+If you want to dive directly into the code, you can find *Scaladocs*, the Scala API documentation, for the latest version of the project [here](http://geotrellis.github.com/api.doc/latest/api/index.html#geotrellis.package).  You can also track the current development of GeoTrellis [at our github repository](http://github.com/geotrellis/geotrellis).
 
 #### Template Project
 
