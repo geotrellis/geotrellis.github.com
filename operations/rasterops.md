@@ -14,6 +14,8 @@ Manipulation and processing of raster data is a large part of the GeoTrellis lib
 - [**Focal Operations**](operations/raster/focal.html): Focal operations calculate resulting raster cell values based on the values in a defined in a neighborhood around the same cell location in one or more input rasters.
 - [**Zonal Operations**](operations/raster/zonal.html): Zonal operations calcuate resulting raster cell values based on the values associated with that cell's zone in one or more input rasters.
 
+**Note:** For each Operation that takes an input Raster and returns a Raster, the data type of the output Raster will be the same as the input Raster, unless otherwise noted.
+
 Along with raster operations that perform Map Algebra-based processing, there are operations which deal with the [**Tiling**](operations/raster/tiling.html) of rasters, as well as others, a partial listing of which is below:
 
 <table class="bordered-table zebra-striped">

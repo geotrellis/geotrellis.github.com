@@ -3,7 +3,7 @@ layout: operations
 title: Creating your own
 
 tutorial: operations
-num: 10
+num: 13
 ---
 
 Ideally, a new geoprocessing service can be composed with existing operations
