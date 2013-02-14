@@ -3,7 +3,8 @@ layout: gettingstarted
 title: Parallel and Distributed Execution
 
 tutorial: gettingstarted
-num: 4
+num: 9
+outof: 9
 ---
 
 ## Parallel and distributed execution
@@ -29,22 +30,22 @@ execution.
     local.Add(r1,r2,r3).remote(cluster)
 
 The remote cluster or server is an Akka actor or load balancer, defined using
-the Akka library configuration. See the [Akka documenation](http://akka.io/docs/akka/2.0-M4)
+the Akka library configuration. See the [Akka documenation](http://akka.io/docs/akka/2.0)
 for more information. Akka configuration can be placed directly in your
 GeoTrellis configuration file (application.conf).
 
 For operations that do not need to pass much data over the network, the
 overhead can be as low as a few milliseconds. When passing raster data, the
-time overhead depends on the network and the size of the rasters. 
+time overhead depends on the network and the size of the rasters.
 
 #### Architecture Concepts
 Behind the scenes, GeoTrellis is using the actor model for parallel and
-distributed computation--the primary abstraction is message passing instead of
+distributed computation -- the primary abstraction is message passing instead of
 shared memory. This event-based model allows us to re-use the same threads by
 interleaving calculations for different processes on the same threads, but
 requires operations to be asynchronous. Operations are not allowed to block
 while waiting on another result because that would hold up the other work that
-is scheduled to execute on the same thread. 
+is scheduled to execute on the same thread.
 
 By using the [continuation passing style](http://en.wikipedia.org/wiki/Continuation-passing_style)
 from functional programming we perform work in a series of stages:
@@ -60,5 +61,5 @@ Thus, we can perform complex calculations across many threads, without ever
 blocking execution on an individual thread.
 
 Operations are sent as immutable messages, and are referrentially transparent.
-This allows us to perform optimizations such as combining  
-local raster operations. 
+This allows us to perform optimizations such as combining
+local raster operations.

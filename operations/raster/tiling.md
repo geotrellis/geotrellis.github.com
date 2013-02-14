@@ -100,20 +100,20 @@ sub: true
         </thead>
         <tbody>
 
-<tr><td><code><a href="http://geotrellis.github.com/api.doc/latest/api/#geotrellis.raster.op.CreateRaster" targe="_blank">CreateRaster</a></code></td><td><div id="comment" class="fullcommenttop"><div class="comment cmt">
+<tr><td><code><a href="http://geotrellis.github.com/scaladocs/latest/#geotrellis.raster.op.CreateRaster" targe="_blank">CreateRaster</a></code></td><td><div id="comment" class="fullcommenttop"><div class="comment cmt">
     <p>Creates an empty raster object based on the given raster properties.</p></div></div></td></tr>
 
-<tr><td><code><a href="http://geotrellis.github.com/api.doc/latest/api/#geotrellis.raster.op.Force" targe="_blank">Force</a></code></td><td><div id="comment" class="fullcommenttop"><div class="comment cmt">
+<tr><td><code><a href="http://geotrellis.github.com/scaladocs/latest/#geotrellis.raster.op.Force" targe="_blank">Force</a></code></td><td><div id="comment" class="fullcommenttop"><div class="comment cmt">
     <p>Forces evaluation of the resulting raster of the passed in operation. This is useful when you want to force lazy operations to happen at specific points in the operation chain.</p></div></div></td></tr>
 
-<tr><td><code><a href="http://geotrellis.github.com/api.doc/latest/api/#geotrellis.raster.op.VerticalFlip" targe="_blank">VerticalFlip</a></code></td><td><div id="comment" class="fullcommenttop"><div class="comment cmt">
+<tr><td><code><a href="http://geotrellis.github.com/scaladocs/latest/#geotrellis.raster.op.VerticalFlip" targe="_blank">VerticalFlip</a></code></td><td><div id="comment" class="fullcommenttop"><div class="comment cmt">
     <p>Flip the data for a raster along the X-axis.</p><p>The geographic extent will remain unchanged.</p></div><dl class="attributes block"><dt>Note</dt><dd><span class="cmt">
     <p>VerticalFlip does not currently support Double raster data. If you use a Raster with a Double RasterType (TypeFloat,TypeDouble) the data values will be rounded to integers.</p></span></dd></dl></div></td></tr>
 
-<tr><td><code><a href="http://geotrellis.github.com/api.doc/latest/api/#geotrellis.raster.op.data.AsArray" targe="_blank">data.AsArray</a></code></td><td><div id="comment" class="fullcommenttop"><div class="comment cmt">
+<tr><td><code><a href="http://geotrellis.github.com/scaladocs/latest/#geotrellis.raster.op.data.AsArray" targe="_blank">data.AsArray</a></code></td><td><div id="comment" class="fullcommenttop"><div class="comment cmt">
     <p>Converts a raster to an integer array.</p></div></div></td></tr>
 
-<tr><td><code><a href="http://geotrellis.github.com/api.doc/latest/api/#geotrellis.raster.op.data.AsArrayDouble" targe="_blank">data.AsArrayDouble</a></code></td><td><div id="comment" class="fullcommenttop"><div class="comment cmt">
+<tr><td><code><a href="http://geotrellis.github.com/scaladocs/latest/#geotrellis.raster.op.data.AsArrayDouble" targe="_blank">data.AsArrayDouble</a></code></td><td><div id="comment" class="fullcommenttop"><div class="comment cmt">
     <p>Converts a raster to a double array.</p></div></div></td></tr>
 
 </tbody>

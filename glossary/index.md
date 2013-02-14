@@ -14,11 +14,11 @@ title: Glossary
 
 
 * #### ARG (Azavea Raster Grid)
-A [raster](#raster) file format developed to support distributed, high performance data processing in the GeoTrellis framework.
+A [raster](#Raster_Data) file format developed to support distributed, high performance data processing in the GeoTrellis framework.
 
 
 * #### ASCII GRID
-A text-based file format for encoding [raster](#raster) data.  Originally developed by Esri, the file format is an open, non-proprietary format.   
+A text-based file format for encoding [raster](#Raster_Data) data.  Originally developed by Esri, the file format is an open, non-proprietary format.   
 See also:
    - [Wikipedia: Esri GRID](http://en.wikipedia.org/wiki/Esri_grid)
    - [GeoTools docs about ASCII GRID](http://docs.codehaus.org/display/GEOTOOLS/ArcInfo+ASCII+Grid+format#ASCIIGrid)
@@ -29,21 +29,21 @@ The direction in which land surface faces. The data is usually represented as an
 
 
 * #### Cartographic Modeling
-see [Map Algebra](#map_algebra)
+see [Map Algebra](#Map_Algebra)
 
 
 * #### Cell
-The smallest square in a grid.  A cell is the fundamental unit of a [raster](#raster) data set and is sometimes used interchangably with the term [pixel](#pixel).  Usually, it represents a rectangular area organized into an array of data values.
+The smallest square in a grid.  A cell is the fundamental unit of a [raster](#Raster_Data) data set and is sometimes used interchangably with the term [pixel](#Pixel).  Usually, it represents a rectangular area organized into an array of data values.
 
 
 * #### Cell Size
-The linear size in map units of the smallest area (the [cell](#cell) or [pixel](#pixel)) in a [raster](#raster) data set.  For example, most land cover data derived from the Landsat satellite is usually published with a 30 meter cell size.
+The linear size in map units of the smallest area (the [cell](#Cell) or [pixel](#Pixel) ) in a [raster](#Raster_Data) data set.  For example, most land cover data derived from the Landsat satellite is usually published with a 30 meter cell size.
 
 
 * #### Convolution
-A type of [Focal](#focal_operations) operation in which a numerical weight is applied to each cell in the neighborhood (or "kernel").  [Kernel Density](#kernel_density_estimation) (KDE) is an example of a convolution, but they can be used for many purposes.  In Map Algebra terms, a convolution is a FocalDistribution operation.   
+A type of [Focal](#Focal_Operations) operation in which a numerical weight is applied to each cell in the neighborhood (or "kernel").  [Kernel Density](#Kernel_Density_Estimation) (KDE) is an example of a convolution, but they can be used for many purposes.  In Map Algebra terms, a convolution is a FocalDistribution operation.   
 See also:
-   - [GeoTrellis Docs - Convolve Operation](http://azavea.github.com/geotrellis/latest/api/#geotrellis.raster.op.focal.Convolve)
+   - [GeoTrellis Docs - Convolve Operation](http://geotrellis.github.com/scaladocs/latest/#geotrellis.raster.op.focal.Convolve)
 
 
 * #### Coordinate System
@@ -51,9 +51,9 @@ A fixed reference frame superimposed on the surface of the earth (or other plane
 
 
 * #### Cost Distance
-A class of [Focal operations](#focal_operations) in which distance from each cell to the nearest "source" or "target" is computed.  Rather than the linear or "Euclidean" distance, the distance is computed by accumulating a "cost" (sometimes referred to as "friction") to travel from one cell to another.  The cost is usually represented by a second [raster](#raster) data set in which the cost is a numerical value associated with each cell.  In addition to a cost factor, some GIS systems support the addition of vertical and horizontal restrictions on movement in order to better model dispersion and flow in certain kinds of systems.  For example, more gas is required to drive a car uphill than downhill or to drive against he wind, so there is not only a friction component but the direction of travel affects the cost.   
+A class of [Focal operations](#Focal_Operations) in which distance from each cell to the nearest "source" or "target" is computed.  Rather than the linear or "Euclidean" distance, the distance is computed by accumulating a "cost" (sometimes referred to as "friction") to travel from one cell to another.  The cost is usually represented by a second [raster](#Raster_Data) data set in which the cost is a numerical value associated with each cell.  In addition to a cost factor, some GIS systems support the addition of vertical and horizontal restrictions on movement in order to better model dispersion and flow in certain kinds of systems.  For example, more gas is required to drive a car uphill than downhill or to drive against he wind, so there is not only a friction component but the direction of travel affects the cost.   
 See also: 
-   - [Euclidean Distance](#euclidean_distance)
+   - [Euclidean Distance](#Euclidean_Distance)
    - [ArcGIS Resource Center - Understanding Cost Distance Analysis](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#//009z000000z5000000.htm)
    - [ArcGIS Resource Center - Understanding Path Distance Analysis](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/Understanding_path_distance_analysis/009z00000022000000/)
 
@@ -63,18 +63,18 @@ A digital representation of elevation on a land surface.  A DEM is mostly common
 
 
 * #### Euclidean Distance
-A class of [Focal operations](#focal_operations) in which linear (straight-line or "Euclidean") distance from each cell to the nearest "source" or "target" is computed.  Usually, this is done from cell center to cell center.  In addition to distance, separate operations are usually provided for determining Direction to the source and allocating a unique identifier for the nearest source.
+A class of [Focal operations](#Focal_Operations) in which linear (straight-line or "Euclidean") distance from each cell to the nearest "source" or "target" is computed.  Usually, this is done from cell center to cell center.  In addition to distance, separate operations are usually provided for determining Direction to the source and allocating a unique identifier for the nearest source.
 See also: 
    - [Cost Distance](#Cost_Distance)
    - [ArcGIS Resource Center - Understanding Euclidean Distance Analysis](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/Understanding_Euclidean_distance_analysis/009z0000001t000000/)
 
 
 * #### Focal Operations
-A class of [Map Algebra](#map_algebra) operations in which a data set is transformed based on the cells around each cell.  The cells that define "neighborhood" can take many forms, including rectangular, circular, donuts or wedges and more complex operations can be defined by using neighborhoods in which cell has an additional weight defined.   Focal operations are sometimes organized into those in which only the immediate neighborhood is considered and those that include an extended neighborhood.  [Cost Distance](#cost_distance) and [Euclidean Distance](#euclidean_distance) operations are usually considered part of the exended neighborhood group.
+A class of [Map Algebra](#Map_Algebra) operations in which a data set is transformed based on the cells around each cell.  The cells that define "neighborhood" can take many forms, including rectangular, circular, donuts or wedges and more complex operations can be defined by using neighborhoods in which cell has an additional weight defined.   Focal operations are sometimes organized into those in which only the immediate neighborhood is considered and those that include an extended neighborhood.  [Cost Distance](#Cost_Distance) and [Euclidean Distance](#Euclidean_Distance) operations are usually considered part of the exended neighborhood group.
 
 
 * #### GeoTIFF
-An extension of the Tag Image File Format (TIFF) [raster](#raster) file format developed to include additional metadata required for storing geospatial data.  The TIFF file was original developed by Aldus Corporation.
+An extension of the Tag Image File Format (TIFF) [raster](#Raster_Data) file format developed to include additional metadata required for storing geospatial data.  The TIFF file was original developed by Aldus Corporation.
 
 
 * #### Geoprocessing
@@ -105,11 +105,11 @@ A set of techniques for estimating missing values in a continuous surface based 
 
 
 * #### JTS (Java Topology Suite)
-An open source Java library for manipulating [vector](#Vector) geospatial data through a set of planar geometry functions.  The JTS library is a foundation library for many open source and commercial software pacs.  It is licensed under the [LGPL](http://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License) license.  JTS has been ported to C++ as the [GEOS library](http://trac.osgeo.org/geos/) and to .Net as the [Net Topology Suite](http://code.google.com/p/nettopologysuite/).  GeoTrellis uses JTS to provide some of its [vector](#vector) spatial operations.
+An open source Java library for manipulating [vector](#Vector_Data) geospatial data through a set of planar geometry functions.  The JTS library is a foundation library for many open source and commercial software pacs.  It is licensed under the [LGPL](http://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License) license.  JTS has been ported to C++ as the [GEOS library](http://trac.osgeo.org/geos/) and to .Net as the [Net Topology Suite](http://code.google.com/p/nettopologysuite/).  GeoTrellis uses JTS to provide some of its [vector](#vector) spatial operations.
 
 
 * #### Kernel
-Another name for a neighborhood used in a [Focal operation](#focal_operations).
+Another name for a neighborhood used in a [Focal operation](#Focal_Operations).
 
 * #### Kernel Density Estimation
 A measurement of density per unit area from one or more point or polyline features using a kernel function to fit a smoothly tapered surface to each point or polyline.  The result is sometimes known as a "heat map" that shows concentrations of the features.   
@@ -117,20 +117,20 @@ See also:
    - [Wikipedia: Kernel Density Estimation](http://en.wikipedia.org/wiki/Kernel_density_estimation)
    - [ArcGIS Resource Center - Understanding Density Analysis](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/Understanding_density_analysis/009z0000000w000000/)
    - [ArcGIS Resource Center - How Kernel Density Works](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/How_Kernel_Density_works/009z00000011000000/)
-   - [GeoTrellis Docs - KernelDensity operation](http://azavea.github.com/geotrellis/latest/api/#geotrellis.raster.op.focal.KernelDensity)
+   - [GeoTrellis Docs - KernelDensity operation](http://geotrellis.github.com/scaladocs/latest/#geotrellis.raster.op.focal.KernelDensity)
    - [Applying Map Algebra – Part 1](http://www.azavea.com/blogs/atlas/2013/01/applying-map-algebra-part-1/)
 
 
 * #### Kriging
-An [interpolation](#interpolation) technique in which measurement of spatial variation between the known points is used to estimate the unknown values being interpolated.
+An [interpolation](#Interpolation) technique in which measurement of spatial variation between the known points is used to estimate the unknown values being interpolated.
 
 
 * #### Local Operations
-A class of [Map Algebra](#map_algebra) operations in which two or more data sets are combined on a cell-by-cell basis, applying a mathematical function to generate a new map layer.
+A class of [Map Algebra](#Map_Algebra) operations in which two or more data sets are combined on a cell-by-cell basis, applying a mathematical function to generate a new map layer.
 
 
 * #### Map Algebra
-A formal system describing various functions and processes that can be used to manipulate geospatial data.  Originally developed by C. Dana Tomlin, Map Algebra is both a computation language and a general system for combining and transforming geospatial data by decomposing data and data processing into basic building blocks that can be recomposed with great flexibility.  Map Algebra operations are usually organized into [Local](#local_operations), [Focal](#focal_operations) and [Zonal](#zonal_operations) operations.  While not explicitly limited to [raster](#raster) data, it is most commonly associated with manipulation of [raster](#raster) data sets.  Map Algebra was first published as Tomlin's PhD thesis and then as [Geographic Information Systems and Cartographic Modeling](http://www.amazon.com/Geographic-Information-Systems-Cartographic-Modeling/dp/0133509273), a Prentice-Hall book published in 1990.  A revised version of the book, [GIS and Cartographic Modeling](http://www.amazon.com/GIS-Cartographic-Modeling-Dana-Tomlin/dp/158948309X/) was released by Esri Press in 2012.  
+A formal system describing various functions and processes that can be used to manipulate geospatial data.  Originally developed by C. Dana Tomlin, Map Algebra is both a computation language and a general system for combining and transforming geospatial data by decomposing data and data processing into basic building blocks that can be recomposed with great flexibility.  Map Algebra operations are usually organized into [Local](#Local_Operations), [Focal](#Focal_Operations) and [Zonal](#Zonal_Operations) operations.  While not explicitly limited to [raster](#Raster_Data) data, it is most commonly associated with manipulation of [raster](#Raster_Data) data sets.  Map Algebra was first published as Tomlin's PhD thesis and then as [Geographic Information Systems and Cartographic Modeling](http://www.amazon.com/Geographic-Information-Systems-Cartographic-Modeling/dp/0133509273), a Prentice-Hall book published in 1990.  A revised version of the book, [GIS and Cartographic Modeling](http://www.amazon.com/GIS-Cartographic-Modeling-Dana-Tomlin/dp/158948309X/) was released by Esri Press in 2012.  
 
 
 * #### Manhattan Distance
@@ -146,7 +146,7 @@ Satellite or aerial photography collected in two or more wavebands.
 
 
 * #### Neighborhood Operations
-See [Focal Operations](#focal_operations)
+See [Focal Operations](#Focal_Operations)
 
 
 * #### Operations
@@ -154,11 +154,11 @@ Operations are transformations of data that result in new data.
 
 
 * #### Pixel
-Short for "pixel element", colloquially, a pixel refers to the smallest element of a display device.  In remote sensing, it also refers to the fundamental unit of data in a [raster](#raster) data set and is used interchangably with the term [cell](#cell).  Usually, it is a rectangular cell organized into an array of data values.
+Short for "pixel element", colloquially, a pixel refers to the smallest element of a display device.  In remote sensing, it also refers to the fundamental unit of data in a [raster](#Raster_Data) data set and is used interchangably with the term [cell](#Cell).  Usually, it is a rectangular cell organized into an array of data values.
 
 
 * #### Projection or Map Projection
-A mechanism by which the curved surface of the Earth (or other planet) is represented on a flat surface.  The map projection is key parameter of the [coordinate systems](#coordinate_systems) used to encode geospatial data sets.
+A mechanism by which the curved surface of the Earth (or other planet) is represented on a flat surface.  The map projection is key parameter of the [coordinate systems](#Coordinate_Systems) used to encode geospatial data sets.
 
 
 * #### Raster Data
@@ -176,7 +176,4 @@ A geospatial data structure in which the location of features or objects is repr
 
 
 * #### Zonal Operations
-A class of [Map Algebra](#map_algebra) operations in which a data set is summarized based on the values of all cells sharing a common value (a single zone).
-
-
-
+A class of [Map Algebra](#Map_Algebra) operations in which a data set is summarized based on the values of all cells sharing a common value (a single zone).

@@ -101,7 +101,3 @@ For example, the following code tries to find the pattern of a two-element list
 where the first element and second elements are integers. If the input matches
 this pattern, it saves the first element in ``a`` and the second in ``b`` and
 executes the provide block of code.
-
-If you want to understand more about the machinery at work here, see the
-*Architecture Concepts* section and the Server code
-(`geotrellis/process/server.scala` and `geotrellis/process/actors.scala`).
