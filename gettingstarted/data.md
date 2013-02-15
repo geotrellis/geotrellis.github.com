@@ -40,7 +40,7 @@ signed, and that ARG has fixed NoData values that are not currently respected in
 
 #### Loading Directly from the File System
 
-GeoTrellis can load ARG files directly with the [*io.LoadFile*](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.io.LoadFile)
+GeoTrellis can load ARG files directly with the [*io.LoadFile*](http://geotrellis.github.com/scaladocs/latest/#geotrellis.io.LoadFile)
 operation.
 
      val raster:Op[Raster] = io.LoadFile("/path/to/raster.arg")
@@ -72,7 +72,7 @@ are arg files. This means that you must not store the catalog file in
 the same directory.
 
 To get rasters that are based on a catalog you can use the
-[*io.LoadRaster*](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.io.LoadRaster) operation. In addition, you need to tell your execution server where the catalog file is.
+[*io.LoadRaster*](http://geotrellis.github.com/scaladocs/latest/#geotrellis.io.LoadRaster) operation. In addition, you need to tell your execution server where the catalog file is.
 
      // Bind our catalog to the server
      val server = Server("exec", "/path/to/catalog.josn")
@@ -84,7 +84,7 @@ To get rasters that are based on a catalog you can use the
      val raster:Raster = server.run(rasterOp)
 
 Operations for loading and writing data can be found in the
-[*geotrellis.io* package](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.io.package)
+[*geotrellis.io* package](http://geotrellis.github.com/scaladocs/latest/#geotrellis.io.package)
 
 #### Creating New Rasters
 

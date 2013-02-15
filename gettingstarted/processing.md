@@ -11,7 +11,7 @@ outof: 9
 
 All GeoTrellis computations run in an operation context. To actually
 evaluate a result you must execute the operation with
-[*server.run*](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.process.Server).
+[*server.run*](http://geotrellis.github.com/scaladocs/latest/#geotrellis.process.Server).
 
 An up to date list of operations can be found on the
 [operations]({{site.baseurl}}/operations/rasterops.html) page.

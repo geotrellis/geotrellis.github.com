@@ -33,8 +33,8 @@
                 <li class="menu">
                       <a href="#" class="menu">Scala Docs</a>
                       <ul class="menu-dropdown">
-                        <li><a href="http://geotrellis.github.com/api.doc/0.8/api/#package" target="_blank">Current Release</a></li>
-                        <li><a href="http://geotrellis.github.com/scaladocs/latest/api/#package" target="_blank">Latest</a></li>
+                        <li><a href="http://geotrellis.github.com/scaladocs/0.8/#package" target="_blank">Current Release</a></li>
+                        <li><a href="http://geotrellis.github.com/scaladocs/latest/#package" target="_blank">Latest</a></li>
                       </ul>
                 </li>
 
