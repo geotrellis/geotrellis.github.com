@@ -11,7 +11,7 @@ These sets of operation are relevant to all compound operations as they are used
 #### IO operations 
 
 IO operations provide input, loading data, and output, translating the output of geoprocessing models
-into output formats.  [Scala package geotrellis.io.](http://geotrellis.github.com/api.doc/latest/api/#geotrellis.io.package)
+into output formats.  [Scala package geotrellis.io.](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.io.package)
 
 <table class="bordered-table zebra-striped">
       <thead>
@@ -34,7 +34,7 @@ into output formats.  [Scala package geotrellis.io.](http://geotrellis.github.co
 
 #### Logic operations
 
-Logical operations for composing compound operations.  [Scala package geotrellis.logic.](http://geotrellis.github.com/api.doc/latest/api/#geotrellis.logic.package)
+Logical operations for composing compound operations.  [Scala package geotrellis.logic.](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.logic.package)
 
 <table class="bordered-table zebra-striped">
       <thead>
@@ -50,4 +50,4 @@ Logical operations for composing compound operations.  [Scala package geotrellis
 </tbody>
 </table>
 
-For Haskell-inspired syntax, see [see geotrellis.logic.applicative](http://geotrellis.github.com/api.doc/latest/api/#geotrellis.logic.applicative.package) package.
+For Haskell-inspired syntax, see [see geotrellis.logic.applicative](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.logic.applicative.package) package.

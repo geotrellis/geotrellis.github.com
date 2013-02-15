@@ -14,7 +14,7 @@ map the value for each input's `(x, y)` cell to a single value in the output
 raster's `(x, y)` cell. These properties allow GeoTrellis to parallelize local
 operations very effectively.
 
-Located in [geotrellis.raster.op.local.](http://geotrellis.github.com/api.doc/latest/api/#geotrellis.raster.op.local.package)
+Located in [geotrellis.raster.op.local.](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.raster.op.local.package)
 
 <table class="bordered-table zebra-striped">
       <thead>
@@ -57,7 +57,7 @@ Located in [geotrellis.raster.op.local.](http://geotrellis.github.com/api.doc/la
 </table>
 
 #### Focal operations
-Raster operations that work on raster cells and their neighbors. Located in [geotrellis.raster.op.focal.](http://geotrellis.github.com/api.doc/latest/api/#geotrellis.raster.op.focal.package)
+Raster operations that work on raster cells and their neighbors. Located in [geotrellis.raster.op.focal.](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.raster.op.focal.package)
 
 <table class="bordered-table zebra-striped">
       <thead>
@@ -90,7 +90,7 @@ Raster operations that work on raster cells and their neighbors. Located in [geo
 
 
 #### Zonal operations
-Raster operations that work on areas of cells that share the same value in an input raster. Located in [geotrellis.raster.op.zonal.](http://geotrellis.github.com/api.doc/latest/api/#geotrellis.raster.op.zonal.package)
+Raster operations that work on areas of cells that share the same value in an input raster. Located in [geotrellis.raster.op.zonal.](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.raster.op.zonal.package)
 
 <table class="bordered-table zebra-striped">
       <thead>

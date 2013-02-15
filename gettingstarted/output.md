@@ -13,10 +13,10 @@ outof: 9
 
 GeoTrellis has a suite of statistics operations that can be run on
 rasters. Most of the simple statistic operations are in the
-[*statistics* package](http://geotrellis.github.com/api.doc/latest/api/#geotrellis.statistics.op.stat.package).
+[*statistics* package](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.statistics.op.stat.package).
 
 To get a histogram, for example, you can use the
-[*stat.GetHistogram* operation](http://geotrellis.github.com/api.doc/latest/api/#geotrellis.statistics.op.stat.GetHistogram$).
+[*stat.GetHistogram* operation](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.statistics.op.stat.GetHistogram$).
 
 There are two types of histograms in GeoTrellis. One that uses a
 hashtable to store the values and another that uses an array. The
