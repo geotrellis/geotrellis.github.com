@@ -115,6 +115,13 @@
   list-style-image: url(/resources/images/red-arrow-small.png);
 }
 
+/* Operation Tables */
+
+.bordered-table {
+    table-layout: fixed;
+    width: 618px;
+}
+
 /*Coursera stuff*/
 
   .label {

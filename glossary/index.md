@@ -177,6 +177,3 @@ A geospatial data structure in which the location of features or objects is repr
 
 * #### Zonal Operations
 A class of [Map Algebra](#Map_Algebra) operations in which a data set is summarized based on the values of all cells sharing a common value (a single zone).
-
-
-

@@ -2,8 +2,8 @@
 	<div class="container">
 		<ul>
 			<li><h5>API</h5></li>
-			<li><a href="http://geotrellis.github.com/api.doc/0.7.0/api/#package" target="_blank">Current Release</a></li>
-			<li><a href="http://azavea.github.com/api.doc/latest/api/#package" target="_blank">Latest</a></li>
+			<li><a href="http://geotrellis.github.com/scaladocs/0.7.0/#package" target="_blank">Current Release</a></li>
+			<li><a href="http://geotrellis.github.com/scaladocs/latest/#package" target="_blank">Latest</a></li>
 		</ul>
 		<ul>
 			<li><h5>Learn</h5></li>
@@ -15,16 +15,10 @@
                         <li><a href="{{ site.baseurl }}/operations">Operations</a></li>
                         <li><a href="{{ site.baseurl }}/glossary">Glossary</a></li>
 		</ul>
-		<!-- <ul> -->
-		<!-- 	<li><h5>Demos</h5></li> -->
-                <!--         <li><a href="{{ site.baseurl }}/demos">Demos Home</a><li> -->
-                <!--         <li><a href="http://azavea.github.com/geotrellis/0.7.0/api/#package">Weighted Overlay</a></li> -->
-                <!--         <li><a href="http://azavea.github.com/geotrellis/latest/api/#package">Kernel Density</a></li> -->
-		<!-- </ul> -->
 		<ul>
 			<li><h5>Other Resources</h5></li>
-                        <li><a href="https://github.com/azavea/geotrellis/" target="_blank">Github</a></li>     
-                        <li><a href="https://github.com/azavea/geotrellis/wiki" target="_blank">Wiki</a></li>
+                        <li><a href="https://github.com/geotrellis/geotrellis/" target="_blank">Github</a></li>     
+                        <li><a href="https://github.com/geotrellis/geotrellis/wiki" target="_blank">Wiki</a></li>
 			<li><a href="http://www.azavea.com/" target="_blank">Azavea</a></li>				
 		</ul>						
 	</div>
