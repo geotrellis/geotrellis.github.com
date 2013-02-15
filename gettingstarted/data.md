@@ -18,24 +18,26 @@ convert GeoTiff raster files.  To install the command line tool (gt-tool), you s
 [the instructions on the Conscript page][csrm]. 
 
 Once conscript is installed, run the following at a command prompt to install gt-tool:
-     cs geotrellis/geotrellis
+
+    cs geotrellis/geotrellis
 
 Once installed, you can convert a GeoTiff with a command like the following:
 
-  gt-tool import -d /var/geotrellis/data -i /tmp/input.tif -n name_of_raster
+    gt-tool import -d /var/geotrellis/data -i /tmp/input.tif -n name_of_raster
 
 Note that you will need to replace "/var/geotrellis/data" with the directory you wish to use to store data, "/tmp/input.tif"
 replaced with the name of the file to import, and "name_of_raster" with the name you wish to give the output raster.
 
 For more information, run: 
 
-  gt-tool --help 
+    gt-tool --help 
 
 If your data is not in the GeoTiff format, we recommend using the excellent [GDAL project](http://www.gdal.org/) for data conversion.
 In the upcoming 0.10 release of GDAL, there is direct support for converting files into the ARG format, but because of some common
-complexities that arise when using GDAL directly, we advise converting to GeoTiff and using our command line tool.  (If you do wish
-to use GDAL, you will need to understand some technical details: Byte in GDAL is unsigned, whereas Byte in GeoTrellis and the JVM is 
-signed, and that ARG has fixed NoData values that are not currently respected in GDAL.)
+complexities that arise when using GDAL directly, we advise converting to GeoTiff and using our command line tool.  
+
+(If you do wish to use GDAL, you will need to understand some technical details: Byte in GDAL is unsigned, whereas Byte in GeoTrellis and the JVM is 
+signed.  Also be aware that ARG has fixed NoData values that are not currently handled correctly in all cases in GDAL.)
  
 
 #### Loading Directly from the File System
