@@ -9,7 +9,7 @@ outof: 9
 
 #### Scaladocs
 
-If you want to dive directly into the code, you can find *Scaladocs*, the Scala API documentation, for the latest version of the project [here](http://geotrellis.github.com/scaladocs/latest/api/index.html#geotrellis.package).  You can also track the current development of GeoTrellis [at our github repository](http://github.com/geotrellis/geotrellis).
+If you want to dive directly into the code, you can find *Scaladocs*, the Scala API documentation, for the latest version of the project [here](http://geotrellis.github.com/scaladocs/latest/index.html#geotrellis.package).  You can also track the current development of GeoTrellis [at our github repository](http://github.com/geotrellis/geotrellis).
 
 #### Mailing list and IRC
 You can find us on IRC at #geotrellis on freenode, or join the [geotrellis-user mailing list](https://groups.google.com/group/geotrellis-user).  We're always interested in what you're working on, if we can help, and any feedback you might have.  If you'd like to contact us directly, send an email to Josh at jmarcus@azavea.com.
@@ -19,13 +19,11 @@ You can find us on IRC at #geotrellis on freenode, or join the [geotrellis-user 
 We publish the jars of current release version of GeoTrellis, so you can include GeoTrellis in an SBT project
 by adding the following to your build.sbt file:
 
-
 ```
-scalaVersion := "2.10.0"
+    scalaVersion := "2.10.0"
 
-libraryDependencies += "com.azavea.geotrellis" %% "geotrellis" % "0.8.0"
+    libraryDependencies += "com.azavea.geotrellis" %% "geotrellis" % "0.8.0"
 ```
-
 We also publish [automated snapshot artifacts](https://oss.sonatype.org/content/repositories/snapshots/com/azavea/geotrellis/geotrellis_2.10/) based on recent development.  
 
 We publish a few additional libraries that you might choose to include:

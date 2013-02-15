@@ -193,7 +193,7 @@ There are many online and offline resources for generating color palettes for ca
 + [Designing Better Maps](http://www.amazon.com/Designing-Better-Maps-Guide-Users/dp/1589480899/), by Cynthia A. Brewer
 + [Designed Maps: A Sourcebook](http://www.amazon.com/Designed-Maps-Sourcebook-GIS-Users/dp/1589481607/), by Cynthia A. Brewer
 
-See the [geotrellis.data.ColorRamp scala docs](http://geotrellis.github.com/api.doc/0.8/api/#geotrellis.data.ColorRamp) for additional functionality,
+See the [geotrellis.data.ColorRamp scala docs](http://geotrellis.github.com/scaladocs/0.8/#geotrellis.data.ColorRamp) for additional functionality,
 including adding an alpha gradient to your color ramp.  
 
 ### RGBA vs RGB values
@@ -207,4 +207,4 @@ a value for transparency.  These can be represented with 8 instead of 6 hex char
 (with the alpha opacity value being the last two charcters) such as 0xFF0000FF
 for opaque red.  When using the programming interface, just be sure to keep the
 distinction in mind and, when using RGB values, be sure to use the utility 
-methods that convert them into RGBA values (such as [ColorRamp.createWithRGBColors](http://geotrellis.github.com/api.doc/0.8/api/#geotrellis.data.ColorRamp$)).
+methods that convert them into RGBA values (such as [ColorRamp.createWithRGBColors](http://geotrellis.github.com/scaladocs/0.8/#geotrellis.data.ColorRamp$)).
