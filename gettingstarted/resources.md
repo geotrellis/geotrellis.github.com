@@ -19,11 +19,10 @@ You can find us on IRC at #geotrellis on freenode, or join the [geotrellis-user 
 We publish the jars of current release version of GeoTrellis, so you can include GeoTrellis in an SBT project
 by adding the following to your build.sbt file:
 
-```
     scalaVersion := "2.10.0"
 
     libraryDependencies += "com.azavea.geotrellis" %% "geotrellis" % "0.8.0"
-```
+
 We also publish [automated snapshot artifacts](https://oss.sonatype.org/content/repositories/snapshots/com/azavea/geotrellis/geotrellis_2.10/) based on recent development.  
 
 We publish a few additional libraries that you might choose to include:
