@@ -8,7 +8,7 @@ num: 4
 
 #### Statistics operations
 
-Operations for computing statistics from geographic and non-geographic data. [Scala package geotrellis.statistics.op.stat.](http://geotrellis.github.com/api.doc/latest/api/#geotrellis.statistics.op.stat.package)
+Operations for computing statistics from geographic and non-geographic data. [Scala package geotrellis.statistics.op.stat.](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.statistics.op.stat.package)
 
 <table class="bordered-table zebra-striped">
       <thead>
@@ -32,7 +32,7 @@ Operations for computing statistics from geographic and non-geographic data. [Sc
 
 #### REST Operations
 
-These operations are for use in construction of REST-style web services -- the current operations are all focused on string processing.  [Scala package geotrellis.rest.op.string.](http://geotrellis.github.com/api.doc/latest/api/#geotrellis.rest.op.string.package)
+These operations are for use in construction of REST-style web services -- the current operations are all focused on string processing.  [Scala package geotrellis.rest.op.string.](http://geotrellis.github.com/scaladocs/latest/api/#geotrellis.rest.op.string.package)
 
 <table class="bordered-table zebra-striped">
       <thead>
