@@ -51,7 +51,7 @@ An up to date list of operations can be found on the
     // 2- Farm
     // 3- Industrial
     // 4- Commercial
-    / 5- Residential
+    // 5- Residential
 
     val landAreas:Op[Raster] = logic.DoCell(rasterOp) { cell =>
        if (cell > 1) 1
