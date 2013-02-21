@@ -37,13 +37,4 @@ console in which you are running jekyll can work with UTF-8 characters. As descr
 [Solving UTF problem with Jekyll on Windows](http://joseoncode.com/2011/11/27/solving-utf-problem-with-jekyll-on-windows/)
 you have to execute `chcp 65001`. This command is best added to the `jekyll.bat`-script.
 
-## Markdown ##
-
-The markdown used in this site uses [Maruku](http://maruku.rubyforge.org/maruku.html) extensions.
-
-### Markdwn Editor for OSX ###
-
-There exists a free markdown editor for OSX called [Mou](http://mouapp.com/). It's quite convenient to work with, and it generates the translated Markdown in real-time alongside of your editor window, as can be seen here:
-
-![Mou Screen Shot](http://mouapp.com/images/Mou_Screenshot_1.png)
 
