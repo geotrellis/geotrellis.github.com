@@ -1,8 +1,8 @@
 ---
-layout: gettingstarted
+layout: overviews
 title: Vector Operations
 
-tutorial: gettingstarted
+tutorial: overviews
 num: 6
 outof: 9
 ---

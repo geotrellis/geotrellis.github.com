@@ -1,8 +1,8 @@
 ---
-layout: gettingstarted
+layout: overviews
 title: Raster Data Types and Data Conversions
 
-tutorial: gettingstarted
+tutorial: overviews
 num: 8
 outof: 9
 ---

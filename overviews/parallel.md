@@ -1,8 +1,8 @@
 ---
-layout: gettingstarted
+layout: overviews
 title: Parallel and Distributed Execution
 
-tutorial: gettingstarted
+tutorial: overviews
 num: 9
 outof: 9
 ---
