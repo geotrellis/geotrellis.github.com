@@ -3,7 +3,7 @@
     <div class="row">
 
       <header class="contentheader">
-        <h2>Geotrellis Documentation</h2>
+        <h2>GeoTrellis Documentation</h2>
         <div id=front-image>
           <div id=grid-image>
             <div class="tile lg"></div>
