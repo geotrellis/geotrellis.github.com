@@ -368,7 +368,7 @@ can find this raster by name because of the setup with the Catalog we did earlie
 `SimpleRenderPng` takes in a raster and a color ramp. Color ramps have been
 chosen by the designers at Azavea to handle representing common raster visualization 
 use cases in an esteticly pleasing and informative way. You can see the different color ramps available in our 
-[Color Documentation](http://localhost:4000/gettingstarted/rendering.html).
+[Color Documentation]( {{ site.baseurl }}/overviews/rendering.html).
 The `SimpleRenderPng` operation returns a Byte Array which contains the raw PNG file. To return
 this to the browser, we just return the data with the MIME type `image/png`.
 
