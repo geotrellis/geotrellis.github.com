@@ -14,12 +14,13 @@ spec can be found at
 [https://github.com/geotrellis/geotrellis/wiki/ARG-Specification](https://github.com/geotrellis/geotrellis/wiki/ARG-Specification).
 
 The recommended way to convert raster data into the ARG format is by using a command line tool we provide to 
-convert GeoTiff raster files.  To install the command line tool (gt-tool), you should first installation program called conscript, following
-[the instructions on the Conscript page][csrm]. 
+convert GeoTiff raster files.  The command line tool is a shell script that will download an executable jar file. 
+It is in the scripts/ directory of the geotrellis git repository, or you can download it and make it executable
+(in a linux environment):
 
-Once conscript is installed, run the following at a command prompt to install gt-tool:
-
-    cs geotrellis/geotrellis
+    mkdir -p ~/bin
+    curl -o ~/bin/gt-tool https://raw.github.com/geotrellis/geotrellis/master/scripts/gt-tool
+    chmod a+x ~/bin/gt-tool
 
 Once installed, you can convert a GeoTiff with a command like the following:
 
