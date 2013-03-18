@@ -11,7 +11,7 @@ If you want to see GeoTrellis in action, this tutorial will show you how to run 
 The code for the demo project can be found in the [demo
 folder of the source.](https://github.com/geotrellis/geotrellis/tree/0.8/demo/src/main/scala/demo)
 
-The AMI has a script to start the demo service, called ```start-demo-server.sh```
+[The GeoTrellis 0.8 AMI](https://aws.amazon.com/amis/geotrellis-0-8-and-gdal) has a script to start the demo service, called ```start-demo-server.sh```
 
 #### Running from SBT
 
