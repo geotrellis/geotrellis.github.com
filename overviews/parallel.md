@@ -3,8 +3,8 @@ layout: overviews
 title: Parallel and Distributed Execution
 
 tutorial: overviews
-num: 9
-outof: 9
+num: 6
+outof: 6
 ---
 
 ## Parallel and distributed execution

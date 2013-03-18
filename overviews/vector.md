@@ -3,8 +3,8 @@ layout: overviews
 title: Vector Operations
 
 tutorial: overviews
-num: 6
-outof: 9
+num: 2
+outof: 6
 ---
 
 #### Vector Operations
