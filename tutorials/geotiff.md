@@ -6,13 +6,13 @@ tutorial: tutorials
 num: 3
 ---
 
-In this tutorial we'll go over working with and viewing GeoTIFF data in GeoTrellis. The code that goes along with this code can be [found here](https://github.com/lossyrob/gt-ned-tutorial).
+In this tutorial we'll go over working with and viewing GeoTIFF data in GeoTrellis. The code that goes along with this tutorial can be [found here](https://github.com/lossyrob/gt-ned-tutorial).
 
 #### The Data
 
-The data we will be working with is [National Elevation Dataset 10 Meter 7.5x7.5 minute quadrangle for Pennsylvania](http://www.pasda.psu.edu/uci/MetadataDisplay.aspx?entry=PASDA&file=ned_10meter_quads.xml&dataset=10). The data is archived at [this ftp site](ftp://www.pasda.psu.edu/pub/pasda/ned/10meter_quads/) in many seperate archived GeoTiffs. 
+The data we will be working with is [National Elevation Dataset 10 Meter 7.5x7.5 minute quadrangle for Pennsylvania](http://www.pasda.psu.edu/uci/MetadataDisplay.aspx?entry=PASDA&file=ned_10meter_quads.xml&dataset=10). The data is available at [this ftp site](ftp://www.pasda.psu.edu/pub/pasda/ned/10meter_quads/) in many seperate archived GeoTiffs. 
 
-The first thing we're going to do is download on of the archives and see what it looks like. Download one of the areas (for example [Philadelphia](ftp://www.pasda.psu.edu/pub/pasda/ned/10meter_quads/ned10m_PHILADELPHIA_PA_39075h2.zip)). In the extracted data, we'll find a .tif file. This is the GeoTiff file we'll be working with.
+The first thing we're going to do is download one of the archives and see what it looks like. Download one of the areas (for example [Philadelphia](ftp://www.pasda.psu.edu/pub/pasda/ned/10meter_quads/ned10m_PHILADELPHIA_PA_39075h2.zip)). In the extracted data, we'll find a .tif file. This is the GeoTiff file we'll be working with.
 
 #### Converting to ARG format
 
@@ -43,6 +43,3 @@ This will reproject the raster to the proper projection. We can now use gt-tool 
 #### Getting more data
 
 Included in the codebase is a python script that will download all the data available for Pennsylvania NED data. Running it will populate the catalog with a set of rasters that gives the elevation of various points in PA. It simply downloads the archive, reprojects the GeoTIFF file, and converts it to an ARG file.
-
-
-
