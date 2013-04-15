@@ -16,11 +16,15 @@ The first thing we're going to do is download one of the archives and see what i
 
 #### Converting to ARG format
 
-To be able to work with Rasters in GeoTrellis, they need to be in the [ARG file format](https://github.com/geotrellis/geotrellis/wiki/ARG-Specification). The way we can do this is using the gt-tool script. You can download the gt-tool script from the [GeoTrellis scripts folder](https://raw.github.com/geotrellis/geotrellis/master/scripts/gt-tool), or in the root folder of the code for this tutorial. We can convert our GeoTIFF to an ARG using the geotiff_convert subcommand:
+To be able to work with Rasters in GeoTrellis, they need to be in the [ARG file format](https://github.com/geotrellis/geotrellis/wiki/ARG-Specification). The way we can do this is using the gt-tool script. You can download the gt-tool script from the [GeoTrellis scripts folder](https://raw.github.com/geotrellis/geotrellis/master/scripts/gt-tool), or you can use the one in the root folder of the code for this tutorial. We can convert our GeoTIFF to an ARG using the geotiff_convert subcommand:
 
     gt-tool geotiff_convert -i ned10m39075h2.tif -o philly_ned.arg -n philly_ned
     
-This will produce two files: the philly_ned.arg data file and philly_ned.json metadata file. We need to drop this in a folder that is stated in our GeoTrellis catalog. In the code for this tutorial, the catalog is located in the ```data``` folder, and points to the ```data/ned```, which does not exist in the repository initially. Create that folder and drop the ARG files in. 
+This will produce two files: the philly_ned.arg data file and philly_ned.json metadata file. 
+
+#### Telling GeoTrellis about the Raster
+
+To perform operations on this Raster using GeoTrellis, we need to let GeoTrellis know about the .arg and .json file that we just created. To do that, we drop the files into a folder that is declared in our [GeoTrellis catalog]( {{ site.base }}/overviews/thecatalog.html). In the code for this tutorial, the catalog is located in the ```data``` folder, and points to the ```data/ned```, which does not exist in the repository initially. We need to create that folder and move the ARG files (both the .arg and .json) into it. 
 
 #### First Viewing
 
@@ -28,13 +32,13 @@ Run the GeoTrellis server by running the ```./sbt run``` command in the root dir
 
 <img src="/images/tutorials/geotiff-preproj.png" style="width: 600px;"></img>
 
-You might be able to recognize the shape of Philadelphia, but the raster is clearly in the wrong spot. This is because the GeoTrellis admin tool displays the rasters in the Web Mercator (ESPG:3857) projection. If the raster is not in this projection, you will still be able to see the raster, but it won't be placed correctly. However, if we want to view the raster properly on the map, we can use GDAL to reproject the raster into Web Mercator.
+You might be able to recognize the shape of Philadelphia, but the raster is clearly in the wrong spot. This is because the GeoTrellis admin tool displays the rasters in the Web Mercator (ESPG:3857) projection. If the raster is not in this projection, you will still be able to see the raster, but it won't be placed correctly. If we want to view the raster properly on the map, we can use GDAL to reproject the raster into Web Mercator.
 
-#### Reprojecting with gdal_warp
+#### Reprojecting with gdal warp
 
 This step requires that you have [GDAL](http://www.gdal.org/) installed. For a script to build and install gdal on Ubuntu, see [this gist](https://gist.github.com/lossyrob/4348503).
 
-To reproject the original GeoTIFF raster, we run the gdal_warp on our raster:
+To reproject the original GeoTIFF raster, we run the gdalwarp on our raster:
 
     gdalwarp -t_srs EPSG:3857 ned10m39075h2.tif wm-ned10m39075h2.tif
     
@@ -42,4 +46,4 @@ This will reproject the raster to the proper projection. We can now use gt-tool 
 
 #### Getting more data
 
-Included in the codebase is a python script that will download all the data available for Pennsylvania NED data. Running it will populate the catalog with a set of rasters that gives the elevation of various points in PA. It simply downloads the archive, reprojects the GeoTIFF file, and converts it to an ARG file.
+Included in the codebase is a python script that will download all the data available for Pennsylvania NED data. Running the script will populate the catalog with a set of rasters that represent the elevation of all points in PA. It simply downloads the archive, reprojects the GeoTIFF file, and converts it to an ARG file for each tile, as we did with the one above.
