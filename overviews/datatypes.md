@@ -3,8 +3,7 @@ layout: overviews
 title: Raster Data Types and Data Conversions
 
 tutorial: overviews
-num: 3
-outof: 6
+num: 4
 ---
 
 #### Data Types

@@ -3,8 +3,7 @@ layout: overviews
 title: Rendering Images
 
 tutorial: overviews
-num: 4
-outof: 6
+num: 5
 ---
 
 #### Rendering Images from a Raster

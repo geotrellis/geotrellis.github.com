@@ -3,8 +3,7 @@ layout: overviews
 title: Tiled Rasters
 
 tutorial: overviews
-num: 6
-outof: 6 
+num: 7
 ---
 
 To understand the importance of tiled rasters in GeoTrellis, it's helpful

@@ -3,7 +3,7 @@ layout: overviews
 title: Vector Operations
 
 tutorial: overviews
-num: 2
+num: 3
 outof: 6
 ---
 
