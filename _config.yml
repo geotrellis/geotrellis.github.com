@@ -10,7 +10,7 @@ keywords:
 - GeoProcessing
 - Distributed
 - Scalable
-baseurl: http://geotrellis.github.io 
+baseurl: http://geotrellis.github.io
 pygments: true
 permalink: /:categories/:title.html
 
