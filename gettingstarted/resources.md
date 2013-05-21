@@ -50,3 +50,10 @@ own geoprocessing service.
 The [/demo directory in the github repository](https://github.com/geotrellis/geotrellis/tree/master/demo) includes code from the [web service tutorial]({{site.baseurl}}/tutorials/webservice.html) and a
 demonstration project that provides a REST service that performs a geoprocessing operation and returns a
 PNG image to the user.
+
+
+#### Blog articles
+
+Besides the tutorials included in this documentation, there are also the following blogs that may be helpful:
+* [Developing a Kernel Density Service With GeoTrellis](http://www.azavea.com/blogs/labs/2013/03/developing-a-kernel-density-service-with-geotrellis/)
+* [Viewing Raster Data with GeoTrellis 0.8.1](http://www.azavea.com/blogs/labs/2013/04/viewing-raster-data-with-geotrellis-0-8-1/)
