@@ -10,7 +10,7 @@ keywords:
 - GeoProcessing
 - Distributed
 - Scalable
-
+baseurl: 
 pygments: true
 permalink: /:categories/:title.html
 
