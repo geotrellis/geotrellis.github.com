@@ -24,18 +24,16 @@ raster could be divided into 100 smaller rasters that are 1k by 1k cells each.
 You can think about a tiled raster as a distributed data source, as we cannot
 assume we can load the entire dataset in memory at any one time.
 
-At the current stage of development, using tiled rasters in GeoTrellis does
-unfortunately require specialized data processing and programming.  One reason
-this is the case it is far faster to operate on arrays in memory when possible.
+At the current stage of development, using tiled rasters in GeoTrellis requires special case data processing and programming.  Operations were originally designed to operate on arrays in memory, as this is the fastest access method to raster values. Tiled Rasters need to have their data retrieved in a different method.
 As we approach GeoTrellis 1.0, we hope to make the process more transparent for 
 simple models.  But while there is still much work to be done, there is useful
 infrastructure in place for developing services that operate on tiled raster
-sets.  As this functinality is still a work in progress, I'll mention plans
+sets.  As this functionality is still a work in progress, I'll mention plans
 for future development alongside the current functionality.
 
 ## The tiled ARG format 
 
-On disk, a tiled ARG is a directory full of individual ARG files (each with their own json metadata) with a single master metadata file.  If a tile is entirely
+On disk, a tiled ARG is a directory full of individual ARG files (each with its own json metadata) with a single master metadata file.  If a tile is entirely
 NoData (every cell has no value), there will be no data file for that tile.  In the future, we will support this same functionality for tiles with a
 single value.  The filename of each tile has a suffix with the row and column of the tile.  Each
 tile has the same width in pixels and the same height in pixels: for example,
@@ -61,11 +59,12 @@ you create 1000x1000 tiles, the tiles on the right and bottom edge will have
 For creating the tile, you should use the "import-tile" gt-tool task.
 
 The options for gt-tool are:
-  -i  Path of the input raster file (which can be geotiff, ARG, or another GDAL supported raster format)
-  -d  Output directory for tiles
-  -n  Name of the output raster
-  -cols  Pixel columns (pixel width) per tile
-  -rows  Pixel rows (pixel height) per tile
+
+* -i  Path of the input raster file (which can be geotiff, ARG, or another GDAL supported raster format)
+* -d  Output directory for tiles
+* -n  Name of the output raster
+* -cols  Pixel columns (pixel width) per tile
+* -rows  Pixel rows (pixel height) per tile
 
 For example, a sample usage could look like:
 
@@ -114,7 +113,7 @@ have been implemented to handle tiled rasters.
 ## Map/Reduce style Summary operations
 
 As designed, a core function of tiled rasters is to allow operations on rasters too large to fit in memory.
-The logic.TileReducer class be extended to create operations that perform an operation on each individual
+The logic.TileReducer class can be extended to create operations that perform an operation on each individual
 tile (the mapper) and then perform an operation to combine the results of those operations (the reducer).
 Examples of operations that implement this interface are stats.Min and stats.GetHistogram.
 
@@ -125,7 +124,9 @@ a single compound operation that is only run when necessary.  Because of this, i
 local operations as part of your tiled raster operations.  However, you should not *only* use local
 operations on a tiled raster as you cannot assume that the raster can fit into memory on a single
 machine to produce a result.  For example, you might summarize the results of your raster transformed
-by local operations. 
+by local operations.
+
+For maximum efficiency it's important that a sequence of local raster operations on a tile can be completed using a machine's available memory. GeoTrellis helps by performing local operations lazily, combining chained local operations into a single compound operation executed on a pixel at a time (rather than constructing an intermediate raster for each operation). However, many operations have results that are Rasters held completely in memory. The operation might still exceed available memory if the final result is a in-memory raster that is larger than can fit in memory. Adding a summarizing operation as the final step can prevent the need to keep an entire raster tile in memory.
 
 ### Focal operations
 
