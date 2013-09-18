@@ -19,15 +19,15 @@ GeoTrellis currently supports six basic types of raster data:
 
 The size (in bits) represents the amount of data used on the filesystem or in
 memory by each cell. Raster sizes can usually be estimated by the following
-equation:
+equations:
 
     bits = rows * columns * size-per-cell
     bytes = bits / 8
     megabytes = bytes / 1,048,576
 
 Using this formula, a 3000 x 2000 raster of boolean cells would use 750K, but a
-1000 x 1000 double raster would require 64M of space (each double value
-requires 512 times as much space as a boolean).
+1000 x 1000 double raster would require 8M of space (each double value
+requires 64 times as much space as a boolean).
 
 #### Calculation Types
 
@@ -40,7 +40,7 @@ desired, manual conversions to a wider type can be performed.
 
 Some calculations will use the raster's underlying type while others will
 specify a particular type. For instance, bitwise operations will always occur
-on a cell's integer value.
+on a cell's integer value. So if you do a bitwise operation on a floating point valued Raster, those values will be converted to integers as the operation retrieves values from the Raster.
 
 #### Conversions Between Types
 
@@ -55,7 +55,7 @@ optimizes these conversions by performing them lazily. For instance:
     // Apply conversion to Double.
     val converted = raster.convert(TypeDouble)
 
-    // No data has been not converted yet;
+    // No data has been converted yet;
     // future operations will apply conversion.
 
     // result contains Double values.

@@ -20,7 +20,7 @@ represents counts, measurements, or ratios, there are usually many distinct
 values.  One common way to represent raster data visually on a map
 is to divide up the values of the data into different categories called classes,
 and then represent each class on the map with its own color.  Each class has
-an lower and upper limit that defines what values falls within it.  For example,
+a lower and upper limit that define what values fall within it.  For example,
 a class might contain values between 0 and 10.  We call these limits *class breaks*.
 
 When rendering a raster in GeoTrellis, you can either use one of the automated classification schemes or manually determine the class breaks.  For example, if you were creating a map of average household income, you might want one of the classes to be defined as below the federal poverty guidelines (manual classification) or organized into several equal intervals between the minimum and maximum (using the built-in linear breaks classification scheme).
@@ -37,7 +37,7 @@ ranges will have a bigger difference between the low and high limits.  This
 classification scheme is particularly good at emphasizing highlights or hotspots
 where values are particularly high or low.
 
-You can also request linear breaks (or "equal interval" breaks).  Linear breaks simply divides up the values between the lowest value and the
+You can also request linear breaks (or "equal interval" breaks).  Linear breaks simply divide up the values between the lowest value and the
 highest value, with the difference between the low and high limit being the
 same for each class.  For example, if we want 5 linear breaks between 0 and 50,
 the classes would be 0-10, 10-20, 20-30, 30-40, and 40-50.

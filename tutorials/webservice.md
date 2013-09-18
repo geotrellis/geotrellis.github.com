@@ -9,6 +9,10 @@ num: 3
 In this tutorial we will walk through building web services 
 using Jetty and GeoTrellis from scratch.
 
+#### Scala
+
+GeoTrellis is a scala library, so we will be using Scala to build up our web service. If you are unfamiliar with Scala, you can learn more about the language [here](http://www.scala-lang.org/).
+
 #### Setting up the project
 
 We'll be using [sbt](http://www.scala-sbt.org/) as our build tool. The GeoTrellis code base
@@ -117,11 +121,11 @@ which Jetty then marshals back to the client.
 #### The GeoTrellis Server
 
 Throughout the rest of the tutorial, we will be using GeoTrellis operations to 
-service the requests. GeoTrellis defines [operations](http://localhost:4000/operations/) 
+service the requests. GeoTrellis defines [operations]({{ site.baseurl }}/operations/) 
 that work with vector and raster geospatial data, as well as more simple types such as strings and integers.
 An operation is constructed in code before it is actually executed. This allows
 operations to be composed in a way where their execution happens only when needed.
-This also allows for optimization and parrallization to occur in the execution
+This also allows for optimization and parallelization to occur in the execution
 of composed operations.
 
 The way to execute operations is to run them with a GeoTrellis `Server` object.
@@ -166,7 +170,7 @@ data now by creating a directory in the root direcotry called `data` and create 
     }
     
 This catalog defines one data store, which is the directory `data/arg`. This means any raster in ARG format 
-found in that directory will be available to the Server. Note that a data store cannot be the same directory
+found in that directory will be available to the Server. For a description of the ARG format, see the [documentation on loading data]({{ site.baseurl }}/gettingstarted/data.html). Note that a data store cannot be the same directory
 as the catalog.json lives, because the Server will consider any JSON file in a data store directory to be a
 layer definition for an ARG file.
 
@@ -304,7 +308,7 @@ will result in `0,-10,15,10`.
 
 It's now time to work with some raster data. Download the 
 [sample data set]({{ site.baseurl }}/data/tutorial.tar.gz)
-and extract it's contents into the `data/arg` folder. Now when we restart
+and extract its contents into the `data/arg` folder. Now when we restart
 the tutorial server, the Main.server will have access to a raster named
 `philly_inc_percap`. This a byte-valued raster containing data values representing
 income per capita for the city of Philadelphia. This raster is in 
@@ -362,12 +366,12 @@ Now restart the server, and see the raster:
 `http://localhost:8888/simpleDraw`
 
 Given a `name`, the `io.LoadRaster` operation will return a `geotrellis.Raster`
-instance containing the raster data who's layer name is the parameter. The server
+instance containing the raster data whose layer name is the parameter. The server
 can find this raster by name because of the setup with the Catalog we did earlier.
 
 `SimpleRenderPng` takes in a raster and a color ramp. Color ramps have been
 chosen by the designers at Azavea to handle representing common raster visualization 
-use cases in an esteticly pleasing and informative way. You can see the different color ramps available in our 
+use cases in an aesthetically pleasing and informative way. You can see the different color ramps available in our 
 [Color Documentation]( {{ site.baseurl }}/overviews/rendering.html).
 The `SimpleRenderPng` operation returns a Byte Array which contains the raw PNG file. To return
 this to the browser, we just return the data with the MIME type `image/png`.

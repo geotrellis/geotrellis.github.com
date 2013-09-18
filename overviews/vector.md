@@ -33,7 +33,7 @@ the context of an operation
 #### Working with Extents as Vectors
 
 When working with data it can often be useful to perform vector
-operations on extents. One very common operations is buffered a given
+operations on extents. One very common operation is buffering a given
 extent to make sure that data isn't being clipped
 
     val extent:Op[Extent] = ParseExtent(extentParam)
@@ -47,7 +47,7 @@ extent to make sure that data isn't being clipped
 #### Creating Your Own Vector Operations
 
 If an operation that you want to use isn't yet exposed by the GeoTrellis
-API adding a new one is as simple as extending and operation class:
+API adding a new one is as simple as extending an operation class:
 
     case class GetInteriorPoint[A](g: Geometry[A])
         extends Op1[Geometry[A], Point[A](geom =>
