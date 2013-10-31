@@ -12,7 +12,7 @@ outof: 9
 If you want to dive directly into the code, you can find *Scaladocs*, the Scala API documentation, for the latest version of the project [here](http://geotrellis.github.com/scaladocs/latest/index.html#geotrellis.package).  You can also track the current development of GeoTrellis [at our github repository](http://github.com/geotrellis/geotrellis).
 
 #### Mailing list and IRC
-You can find us on IRC at #geotrellis on freenode, or join the [geotrellis-user mailing list](https://groups.google.com/group/geotrellis-user).  We're always interested in what you're working on, if we can help, and any feedback you might have.  If you'd like to contact us directly, send an email to Josh at jmarcus@azavea.com.
+You can find us on IRC at #geotrellis on freenode, or join the [geotrellis-user mailing list](https://groups.google.com/group/geotrellis-user).  We're always interested in what you're working on, if we can help, and any feedback you might have.  If you'd like to contact us directly, send an email to Rob at remanuele@azavea.com.
 
 #### Adding GeoTrellis to your Project
 
