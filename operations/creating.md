@@ -74,7 +74,7 @@ methods that operations use to load data (via the `Context` object) and also to
 stage calculations across multipe steps.
 
     case class Add(a:Op[Int], b:Op[Int]) extends Op[Int] {
-      def _run(context:Context) = {
+      def \_run(context:Context) = {
         runAsync(List(a, b))
       }
   
@@ -85,7 +85,7 @@ stage calculations across multipe steps.
       }
     }
 
-The _run method is where the execution of the operation begins. We call
+The \_run method is where the execution of the operation begins. We call
 `runAsync` with a list of operations to tell the server to asynchronous execute
 our child operations, and then the partial function `nextSteps` is executed
 when all of the results have been retrieved.
