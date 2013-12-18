@@ -30,7 +30,7 @@ To perform operations on this Raster using GeoTrellis, we need to let GeoTrellis
 
 Run the GeoTrellis server by running the ```./sbt run``` command in the root directory of the code project. You'll then be able to go to http://localhost:8880/admin to see the Philadelphia NED data using the GeoTrellis admin tool. You should see something like this:
 
-<img src="/images/tutorials/geotiff-preproj.png" style="width: 600px;"></img>
+<img src="/images/tutorials/geotiff-preproj.png" style="width: 600px;"/>
 
 You might be able to recognize the shape of Philadelphia, but the raster is clearly in the wrong spot. This is because the GeoTrellis admin tool displays the rasters in the Web Mercator (ESPG:3857) projection. If the raster is not in this projection, you will still be able to see the raster, but it won't be placed correctly. If we want to view the raster properly on the map, we can use GDAL to reproject the raster into Web Mercator.
 
