@@ -140,7 +140,7 @@ To do so, we'll instantiate one inside the `Main` object in `src/main/scala/Main
     package tutorial
 
     import geotrellis.rest.WebRunner
-    import goetrellis.process.{Server,Catalog}
+    import geotrellis.process.{Server,Catalog}
 
     object Main {
       val server = Server("tutorial-server", 
@@ -221,7 +221,7 @@ Create a new file `src/main/scala/AddOne.scala`:
         }
     }
 
-After restarting the server, you can hit this endpoint at `http://localhost:8888/adder/127`.
+After restarting the server, you can hit this endpoint at `http://localhost:8888/addone/127`
 
 Here we see a new Annotation with the `@Path("/{x}")`. What this means is that
 a request with the path `/addone/{x}` will be routed to the method, where `{x}`
