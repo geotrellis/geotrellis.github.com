@@ -1,4 +1,0 @@
----
-layout: demos
-title: Demos
----
